@@ -1,0 +1,88 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id            String         @id @default(cuid())
+  name          String?
+  email         String?        @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+  watchprofile  WatchProfile[]
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model WatchProfile {
+  id          String    @id @default(cuid())
+  name        String
+  profile_pic String
+  list        List[]
+  watched     Watched[]
+
+  User   User?   @relation(fields: [userId], references: [id])
+  userId String?
+}
+
+model List {
+  id             Int           @id @default(autoincrement())
+  name           String
+  description    String
+  can_delete     Boolean       @default(false)
+  TMDBMovieID    String
+  WatchProfile   WatchProfile? @relation(fields: [watchProfileId], references: [id])
+  watchProfileId String?
+}
+
+model Watched {
+  id             Int           @id @default(autoincrement())
+  TMDBMovieID    String
+  // rating is between 0 and 3.
+  rating         Int           @default(0)
+  title          String
+  WatchProfile   WatchProfile? @relation(fields: [watchProfileId], references: [id])
+  watchProfileId String?
+}
