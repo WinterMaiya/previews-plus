@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { getSession, signIn, signOut, useSession } from "next-auth/react";
+import { getSession } from "next-auth/react";
 
 const PreviewsPlus = ({ session }) => {
 	return (
@@ -7,7 +7,7 @@ const PreviewsPlus = ({ session }) => {
 			<Head>
 				<title>Previews+</title>
 			</Head>
-			<div>Hello World</div>
+			<div>You shouldn't be here...</div>
 		</div>
 	);
 };

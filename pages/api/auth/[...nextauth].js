@@ -23,7 +23,7 @@ export default NextAuth({
 	theme: {
 		colorScheme: "dark", // "auto" | "dark" | "light"
 		brandColor: "#FFD700", // Hex color code
-		logo: "https://miro.medium.com/max/775/0*rZecOAy_WVr16810", // Absolute URL to image
+		logo: "/Previews+.svg", // Absolute URL to image
 		buttonText: "#FFD700", // Hex color code
 	},
 });
