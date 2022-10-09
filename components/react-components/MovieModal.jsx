@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import checkIfInList from "../helper-functions/checkIfInList";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Virtual } from "swiper";
+import { Navigation } from "swiper";
 const MovieModal = ({
 	movieModalLoading,
 	closeModal,

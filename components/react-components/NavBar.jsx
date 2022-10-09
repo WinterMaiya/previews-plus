@@ -18,7 +18,10 @@ const NavBar = ({
 		setSearching("");
 	};
 	return (
-		<nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top align-middle mb-5">
+		<nav
+			data-testid="navbar"
+			className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top align-middle mb-5"
+		>
 			<div className="container-md content-align-center">
 				<button
 					className="navbar-toggler"
@@ -38,6 +41,7 @@ const NavBar = ({
 						clearSearchBar();
 						setDashboardState("Home");
 					}}
+					data-testid="navbar-brand"
 				>
 					Previews+
 				</a>
@@ -53,6 +57,7 @@ const NavBar = ({
 								}}
 								aria-current="page"
 								href="#"
+								data-testid="navbar-item-home"
 							>
 								Home
 							</a>
@@ -67,6 +72,7 @@ const NavBar = ({
 								}}
 								aria-current="page"
 								href="#"
+								data-testid="navbar-item-movies"
 							>
 								Movies
 							</a>
@@ -81,6 +87,7 @@ const NavBar = ({
 								}}
 								aria-current="page"
 								href="#"
+								data-testid="navbar-item-shows"
 							>
 								Shows
 							</a>
@@ -103,6 +110,7 @@ const NavBar = ({
 								searchMovies(e.target.value);
 							}}
 							value={searching}
+							data-testid="navbar-searchbar"
 						/>
 					</form>
 					<ul className="navbar-nav">
@@ -116,6 +124,7 @@ const NavBar = ({
 								aria-expanded="false"
 							>
 								<Image
+									data-testid="navbar-profile-icon"
 									src={watchProfile.profile_pic}
 									alt=""
 									className="shadow img-thumbnail border-2 border-bottom"
@@ -128,7 +137,11 @@ const NavBar = ({
 								aria-labelledby="navbarDropdown"
 							>
 								<li>
-									<a class="dropdown-item" href="/dashboard">
+									<a
+										class="dropdown-item"
+										href="/dashboard"
+										data-testid="navbar-switch-profile"
+									>
 										Switch Profile
 									</a>
 								</li>
@@ -140,12 +153,18 @@ const NavBar = ({
 											clearSearchBar();
 											setPageComponents("Info");
 										}}
+										data-testid="navbar-info"
 									>
 										App & API info
 									</a>
 								</li>
 								<li>
-									<a class="dropdown-item bg-danger" href="#" onClick={signOut}>
+									<a
+										data-testid="navbar-logout"
+										class="dropdown-item bg-danger"
+										href="#"
+										onClick={signOut}
+									>
 										Logout
 									</a>
 								</li>

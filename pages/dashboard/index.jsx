@@ -8,13 +8,14 @@ import AddProfileIcon from "../../components/react-components/dashboard-main/Add
 import CreateWatchProfile from "../../components/react-components/dashboard-main/CreateWatchProfile";
 import ProfileIcon from "../../components/react-components/dashboard-main/ProfileIcon";
 
-const dashboard = ({ session, watchProfiles }) => {
+const Dashboard = ({ session, watchProfiles }) => {
 	// TODO: create a edit page and delete page for the user to change and delete watchProfiles
 	// This is the main dashboard that lets a user choose their watchprofile
 	const [loading, setLoading] = useState(false);
 	const [showModal, setShowModal] = useState(false);
 	const openModal = () => setShowModal(true);
 	const closeModal = () => setShowModal(false);
+	console.log(watchProfiles);
 
 	const len = 6 - watchProfiles.length;
 	useEffect(() => {
@@ -45,7 +46,9 @@ const dashboard = ({ session, watchProfiles }) => {
 					<div className="container">
 						<div className="row">
 							<div className="col text-center">
-								<h1 className="display-1">Who's Watching?</h1>
+								<h1 className="display-1" data-testid="header">
+									Who's Watching?
+								</h1>
 							</div>
 						</div>
 
@@ -119,4 +122,4 @@ export async function getServerSideProps({ req }) {
 	};
 }
 
-export default dashboard;
+export default Dashboard;

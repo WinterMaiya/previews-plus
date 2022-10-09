@@ -47,65 +47,69 @@ const DashboardHome = ({
 			return -1;
 		};
 
-		// Run through movies first
-		let finalArr = [];
-		// This allows us to remove genres as we go through them
-		let tempGenre = [...MOVIE_DATA.movie.genres];
-		if (movie) {
-			movieArr = Object.entries(movie).sort((a, b) => b[1] - a[1]);
-			for (let genreId of movieArr) {
-				// genreId is a list with two numbers
-				// [The actual ID of the genre in TMDB, The User Preference of the genre]
-				// Remove ID's from the temp list so we can grab the rest of the movies later
-				let removeId = removeGenre(genreId[0], tempGenre);
-				tempGenre.splice(removeId, 1);
+		try {
+			// Run through movies first
+			let finalArr = [];
+			// This allows us to remove genres as we go through them
+			let tempGenre = [...MOVIE_DATA.movie.genres];
+			if (movie) {
+				movieArr = Object.entries(movie).sort((a, b) => b[1] - a[1]);
+				for (let genreId of movieArr) {
+					// genreId is a list with two numbers
+					// [The actual ID of the genre in TMDB, The User Preference of the genre]
+					// Remove ID's from the temp list so we can grab the rest of the movies later
+					let removeId = removeGenre(genreId[0], tempGenre);
+					tempGenre.splice(removeId, 1);
 
-				let { data } = await axios.get("/api/movies/", {
-					params: { movie: genreId[0], type: "genreMovie" },
-				});
-				// Grab the title of the genre
-				let title = getGenreTitle(genreId[0], MOVIE_DATA.movie.genres);
-				// Push both the title and the genre so we can dynamically setup the movie options
-				finalArr.push({
-					data,
-					title,
-				});
+					let { data } = await axios.get("/api/movies/", {
+						params: { movie: genreId[0], type: "genreMovie" },
+					});
+					// Grab the title of the genre
+					let title = getGenreTitle(genreId[0], MOVIE_DATA.movie.genres);
+					// Push both the title and the genre so we can dynamically setup the movie options
+					finalArr.push({
+						data,
+						title,
+					});
+				}
 			}
-		}
-		for (let genre of tempGenre) {
-			let { data } = await axios.get("/api/movies/", {
-				params: { movie: genre.id, type: "genreMovie" },
-			});
-			finalArr.push({ data, title: genre.name });
-		}
-		setPreferenceListMovie([...preferenceListMovie, ...finalArr]);
-
-		// Run through TV second
-		finalArr = [];
-		tempGenre = [...MOVIE_DATA.tv.genres];
-		if (tv) {
-			tvArr = Object.entries(tv).sort((a, b) => b[1] - a[1]);
-
-			for (let genreId of tvArr) {
-				let removeId = removeGenre(genreId[0], tempGenre);
-				tempGenre.splice(removeId, 1);
+			for (let genre of tempGenre) {
 				let { data } = await axios.get("/api/movies/", {
-					params: { movie: genreId[0], type: "genreTv" },
+					params: { movie: genre.id, type: "genreMovie" },
 				});
-				let title = getGenreTitle(genreId[0], MOVIE_DATA.tv.genres);
-				finalArr.push({
-					data,
-					title,
-				});
+				finalArr.push({ data, title: genre.name });
 			}
+			setPreferenceListMovie([...preferenceListMovie, ...finalArr]);
+
+			// Run through TV second
+			finalArr = [];
+			tempGenre = [...MOVIE_DATA.tv.genres];
+			if (tv) {
+				tvArr = Object.entries(tv).sort((a, b) => b[1] - a[1]);
+
+				for (let genreId of tvArr) {
+					let removeId = removeGenre(genreId[0], tempGenre);
+					tempGenre.splice(removeId, 1);
+					let { data } = await axios.get("/api/movies/", {
+						params: { movie: genreId[0], type: "genreTv" },
+					});
+					let title = getGenreTitle(genreId[0], MOVIE_DATA.tv.genres);
+					finalArr.push({
+						data,
+						title,
+					});
+				}
+			}
+			for (let genre of tempGenre) {
+				let { data } = await axios.get("/api/movies/", {
+					params: { movie: genre.id, type: "genreTv" },
+				});
+				finalArr.push({ data, title: genre.name });
+			}
+			setPreferenceListTv([...preferenceListTv, ...finalArr]);
+		} catch (e) {
+			console.error(e);
 		}
-		for (let genre of tempGenre) {
-			let { data } = await axios.get("/api/movies/", {
-				params: { movie: genre.id, type: "genreTv" },
-			});
-			finalArr.push({ data, title: genre.name });
-		}
-		setPreferenceListTv([...preferenceListTv, ...finalArr]);
 	};
 
 	useEffect(() => {

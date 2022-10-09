@@ -35,9 +35,6 @@ const CreateWatchProfile = ({ closeModal, setLoading }) => {
 		<div className="modal-dialog modal-fullscreen text-white">
 			<div className="modal-content">
 				<div className="modal-header bg-dark">
-					{/* <h5 className="modal-title" id="movie-title">
-						test
-					</h5> */}
 					<button
 						type="button"
 						className="btn-close btn-close-white"
@@ -52,14 +49,15 @@ const CreateWatchProfile = ({ closeModal, setLoading }) => {
 								submitData();
 							}}
 						>
-							<div className="mb-3 text-center">
+							<div className="mb-3 text-center" data-testid="modal-header">
 								<h2>Create New Watch Profile</h2>
 							</div>
 							<div className="mb-3">
-								<label for="name" class="form-label">
+								<label for="name" class="form-label" data-testid="name">
 									{name ? `Hello ${name}!` : "Display Name"}
 								</label>
 								<input
+									data-testid="input"
 									type="text"
 									value={name}
 									class="form-control"
@@ -72,10 +70,12 @@ const CreateWatchProfile = ({ closeModal, setLoading }) => {
 								/>
 							</div>
 							<div className="mb-3 text-center">
-								<button className="btn btn-primary">Start Watching</button>
+								<button className="btn btn-primary" data-testid="button">
+									Start Watching
+								</button>
 							</div>
 							<div className="mb-3 text-center">
-								<h3>Select A Profile Icon</h3>
+								<h3 data-testid="profile-icon-header">Select A Profile Icon</h3>
 								<div className="row">
 									{globalProfileImage.map((e) => {
 										return (

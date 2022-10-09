@@ -1,0 +1,2886 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Profile Dashboard Matches Snapshot 1`] = `
+<div>
+  <div
+    class="bg-dark text-white bg-gradient-reverse "
+  >
+    <div
+      class="navbar-margin"
+    >
+      <nav
+        class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top align-middle mb-5"
+        data-testid="navbar"
+      >
+        <div
+          class="container-md content-align-center"
+        >
+          <button
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-bs-target="#navbarTogglerDemo03"
+            data-bs-toggle="collapse"
+            type="button"
+          >
+            <span
+              class="navbar-toggler-icon"
+            />
+          </button>
+          <a
+            class="navbar-brand text-primary satisfy-font"
+            data-testid="navbar-brand"
+            href="#"
+          >
+            Previews+
+          </a>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarTogglerDemo03"
+          >
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0"
+            >
+              <li
+                class="nav-item"
+              >
+                <a
+                  aria-current="page"
+                  class="nav-link active"
+                  data-testid="navbar-item-home"
+                  href="#"
+                >
+                  Home
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  aria-current="page"
+                  class="nav-link active"
+                  data-testid="navbar-item-movies"
+                  href="#"
+                >
+                  Movies
+                </a>
+              </li>
+              <li
+                class="nav-item"
+              >
+                <a
+                  aria-current="page"
+                  class="nav-link active"
+                  data-testid="navbar-item-shows"
+                  href="#"
+                >
+                  Shows
+                </a>
+              </li>
+            </ul>
+            <form
+              class="d-flex"
+              role="search"
+            >
+              <input
+                aria-label="Search"
+                class="form-control me-2"
+                data-testid="navbar-searchbar"
+                placeholder="Search"
+                type="search"
+                value=""
+              />
+            </form>
+            <ul
+              class="navbar-nav"
+            >
+              <li
+                class="nav-item dropdown"
+              >
+                <a
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle align-middle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                >
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2740%27%20height=%2740%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt=""
+                      class="shadow img-thumbnail border-2 border-bottom"
+                      data-nimg="intrinsic"
+                      data-testid="navbar-profile-icon"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </a>
+                <ul
+                  aria-labelledby="navbarDropdown"
+                  class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-testid="navbar-switch-profile"
+                      href="/dashboard"
+                    >
+                      Switch Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-testid="navbar-info"
+                      href="#"
+                    >
+                      App & API info
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item bg-danger"
+                      data-testid="navbar-logout"
+                      href="#"
+                    >
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section
+      class="my-5"
+      id="Home"
+    >
+      <div
+        class="container-fluid"
+      >
+        <div
+          class="d-block"
+        >
+          <div
+            class="card bg-dark text-white my-5"
+          >
+            <img
+              class="rounded card-img"
+              src="https://image.tmdb.org/t/p/original//pfAZP7JvTTxqgq7n6A1OYgkAdEW.jpg"
+            />
+            <div
+              class="card-img-overlay bg-dark bg-opacity-50"
+            >
+              <div
+                class="container"
+              >
+                <div
+                  class="row"
+                >
+                  <div
+                    class="col"
+                  >
+                    <h2
+                      class="display-6 fst-italic d-none d-sm-block"
+                    >
+                      Trending Today:
+                    </h2>
+                    <h1
+                      class="display-1 amatic-font"
+                    >
+                      Werewolf by Night
+                    </h1>
+                  </div>
+                </div>
+                <div
+                  class="row"
+                >
+                  <div
+                    class="my-1 col-md-9"
+                  >
+                    <div>
+                      <span
+                        class="fst-italic"
+                      >
+                         
+                        Action
+                         
+                      </span>
+                      <span
+                        class="fst-italic"
+                      >
+                         
+                        Fantasy
+                         
+                      </span>
+                      <span
+                        class="fst-italic"
+                      >
+                         
+                        Horror
+                         
+                      </span>
+                      <span
+                        class="fst-italic"
+                      >
+                         
+                        Mystery
+                         
+                      </span>
+                      <span>
+                        | 
+                        7.5
+                        /10 |
+                      </span>
+                      <span>
+                         
+                        2022-09-25
+                      </span>
+                      <button
+                        class="btn btn-sm btn-secondary rounded mx-1 ms-2"
+                      >
+                        <svg
+                          class="bi bi-info-circle-fill"
+                          data-bs-placement="top"
+                          data-bs-toggle="tooltip"
+                          fill="currentColor"
+                          height="25"
+                          title="Tooltip on top"
+                          viewBox="0 0 16 16"
+                          width="25"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+                          />
+                        </svg>
+                      </button>
+                      <button
+                        class="btn btn-sm btn-secondary rounded"
+                      >
+                        <svg
+                          class="bi bi-plus-circle"
+                          fill="currentColor"
+                          height="25"
+                          viewBox="0 0 16 16"
+                          width="25"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                          />
+                          <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p
+                      class="lead w-100 text-break d-none d-sm-block"
+                    >
+                      On a dark and somber night, a secret cabal of monster hunters emerge from the shadows and gather at the foreboding Bloodstone Temple following the death of their leader. In a strange and macabre memorial to the leader’s life, the attendees are thrust into a mysterious and deadly competition for a powerful relic—a hunt that will ultimately bring them face to face with a dangerous monster.
+                    </p>
+                  </div>
+                  <div
+                    class="row"
+                  >
+                    <div
+                      class="col-3 col-md-3 col-xl-4 col-xxl-5"
+                    >
+                      <div
+                        class="d-none d-lg-block mt-3"
+                      >
+                        <ul
+                          class="nav nav-tabs"
+                          id="myTab"
+                          role="tablist"
+                        >
+                          <div />
+                        </ul>
+                        <div
+                          class="tab-content"
+                          id="myTabContent"
+                        >
+                          <div />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <svg
+                    class="up-and-down d-none d-xxl-block bi bi-chevron-double-down mb-5"
+                    fill="currentColor"
+                    height="100"
+                    viewBox="0 0 16 16"
+                    width="100"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                      fill-rule="evenodd"
+                    />
+                    <path
+                      d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container text-center pt-5 mt-5"
+      >
+        <div
+          class="row d-block"
+        >
+          <div
+            class="col"
+          >
+            <div>
+              <div>
+                <div
+                  class=""
+                >
+                  <h2
+                    class="amatic-font text-start display-6 m-0"
+                  >
+                    What's Popular
+                  </h2>
+                  <div
+                    class="border-top"
+                  >
+                    <div
+                      class="swiper swiper-initialized swiper-horizontal swiper-pointer-events"
+                    >
+                      <div
+                        class="swiper-wrapper"
+                        style="transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);"
+                      >
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.5
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.5
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//mvIvNKRIJPPS7WSFarFhOAGIVnU.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.4
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.4
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//e0vrbTmTf2ZcW5CIS9qJ8FDbsU9.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//u4ikorO4E3PouLRRwGaRuhFvsl3.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//2Y4F9BHkacKIMnDBZI3GGKpG1If.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//mYLOqiStMxDK3fYZFirgrMt8z5d.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//gPn9e8eP7TeKQU4IeWAMzOajR40.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.5
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.5
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//tVxDe01Zy3kZqaZRNiXFGDICdZk.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  5.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  5.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//a6welBP7DtjHDsr6fwT5IuCS33f.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.1
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.1
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//nSguJmHeYv6cwTljOZduPJDTweS.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.8
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.8
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//dspwDOosidQT85oPDDHMM9zmaLw.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.8
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.8
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//liGvBdUsyOfiTJjNCD55JJfISzb.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.6
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.6
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//z2yahl2uefxDCl0nogcRBstwruJ.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.8
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.8
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//7ze7YNmUaX81ufctGqt0AgHxRtL.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.0
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.0
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//3qO7wycn6o0lUJf15dupMFbEBTY.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.8
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.8
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  5.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  5.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//aGBuiirBIQ7o64FmJxO53eYDuro.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.5
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.5
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//tn3GWm0Erehkpur8PUuYWxGpul5.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.9
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.9
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//59SVNwLfoMnZPPB6ukW6dlPxAdI.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.9
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.9
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//hiaeZKzwsk4y4atFhmncO5KRxeT.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.4
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.4
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//f2PVrphK0u81ES256lw3oAZuF3x.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-button-prev"
+                      />
+                      <div
+                        class="swiper-button-next"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row d-block"
+        >
+          <div
+            class="col"
+          >
+            <div>
+              <div>
+                <div
+                  class=""
+                >
+                  <h2
+                    class="amatic-font text-start display-6 m-0"
+                  >
+                    My List
+                  </h2>
+                  <div
+                    class="border-top"
+                  >
+                    <div
+                      class="swiper swiper-initialized swiper-horizontal swiper-pointer-events"
+                    >
+                      <div
+                        class="swiper-wrapper"
+                        style="transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row d-block"
+        >
+          <div
+            class="col"
+          >
+            <div>
+              <div>
+                <div
+                  class=""
+                >
+                  <h2
+                    class="amatic-font text-start display-6 m-0"
+                  >
+                    Trending Shows
+                  </h2>
+                  <div
+                    class="border-top"
+                  >
+                    <div
+                      class="swiper swiper-initialized swiper-horizontal swiper-pointer-events"
+                    >
+                      <div
+                        class="swiper-wrapper"
+                        style="transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);"
+                      >
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.4
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.4
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//f2PVrphK0u81ES256lw3oAZuF3x.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//mYLOqiStMxDK3fYZFirgrMt8z5d.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.6
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.6
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//z2yahl2uefxDCl0nogcRBstwruJ.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.0
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.0
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//3qO7wycn6o0lUJf15dupMFbEBTY.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.9
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.9
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//kY0BogCM8SkNJ0MNiHB3VTM86Tz.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//cvhNj9eoRBe5SxjCbQTkh05UP5K.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-danger"
+                              >
+                                 
+                                <span>
+                                  3.4
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  3.4
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//lgD4j9gUGmMckZpWWRJjorWqGVT.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.1
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.1
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.4
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.4
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.4
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.4
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//yThmbQkxSzW4HHdAaoj8RYHFH3i.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.2
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.2
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//m7tG5E1EbywuwTsl6hq990So0Bx.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.5
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.5
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//ekZobS8isE6mA53RAiGDG93hBxL.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.3
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.3
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//daSFbrt8QCXV2hSwB0hqYjbj681.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.1
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.1
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//kxtWasoZ7Q92erTJuuRtZiXTPiH.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.9
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.9
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//59SVNwLfoMnZPPB6ukW6dlPxAdI.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//3r4LYFuXrg3G8fepysr4xSLWnQL.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.0
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.0
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//zI3E2a3WYma5w8emI35mgq5Iurx.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  4.5
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  4.5
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//ixgnqO8xhFMb1zr8RRFsyeZ9CdD.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.6
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.6
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//49WJfeN0moxb9IPfGn8AIqMGskD.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//5BTn4GxWL48BP8OkfiatxZ6qpuE.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-button-prev"
+                      />
+                      <div
+                        class="swiper-button-next"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row d-block"
+        >
+          <div
+            class="col"
+          >
+            <div>
+              <div>
+                <div
+                  class=""
+                >
+                  <h2
+                    class="amatic-font text-start display-6 m-0"
+                  >
+                    Trending Movies
+                  </h2>
+                  <div
+                    class="border-top"
+                  >
+                    <div
+                      class="swiper swiper-initialized swiper-horizontal swiper-pointer-events"
+                    >
+                      <div
+                        class="swiper-wrapper"
+                        style="transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);"
+                      >
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.9
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.9
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//7ze7YNmUaX81ufctGqt0AgHxRtL.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.9
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.9
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//pHkKbIRoCe7zIFvqan9LFSaQAde.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.5
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.5
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//tVxDe01Zy3kZqaZRNiXFGDICdZk.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.4
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.4
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//spCAxD99U1A6jsiePFoqdEcY0dG.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.8
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.8
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//bSqpOGzaKBdGkBLmcm1JJIVryYy.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.5
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.5
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//djM2s4wSaATn4jVB33cV05PEbV7.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.6
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.6
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//fenNPxVF5ERy0CSyVruuEg959Hg.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.9
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.9
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//6b7swg6DLqXCO3XUsMnv6RwDMW2.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//g8sclIV4gj1TZqUpnL82hKOTK3B.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.1
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.1
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//xIGr7UHsKf0URWmyyd5qFMAq4d8.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.0
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.0
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//AeyiuQUUs78bPkz18FY3AzNFF8b.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.8
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.8
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//hiaeZKzwsk4y4atFhmncO5KRxeT.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.8
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.8
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.5
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.5
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//r7XifzvtezNt31ypvsmb6Oqxw49.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.9
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.9
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//ujr5pztc1oitbe7ViMUOilFaJ7s.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.6
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.6
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//wKiOkZTN9lUUUNZLmtnwubZYONg.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.9
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.9
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//vwq5iboxYoaSpOmEQrhq9tHicq7.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.0
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.0
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//rugyJdeoJm7cSJL1q4jBpTNbxyU.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.0
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.0
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  4.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  4.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//cj6YmTAU7Jvn3w6d2NfjQzpX7Pw.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-button-prev"
+                      />
+                      <div
+                        class="swiper-button-next"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row d-block"
+        >
+          <div
+            class="col"
+          >
+            <div>
+              <div>
+                <div
+                  class=""
+                >
+                  <h2
+                    class="amatic-font text-start display-6 m-0"
+                  >
+                    Trending this Week
+                  </h2>
+                  <div
+                    class="border-top"
+                  >
+                    <div
+                      class="swiper swiper-initialized swiper-horizontal swiper-pointer-events"
+                    >
+                      <div
+                        class="swiper-wrapper"
+                        style="transition-duration: 0ms; transform: translate3d(NaNpx, 0px, 0px);"
+                      >
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.5
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.5
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//tVxDe01Zy3kZqaZRNiXFGDICdZk.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//mYLOqiStMxDK3fYZFirgrMt8z5d.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.8
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.8
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//7ze7YNmUaX81ufctGqt0AgHxRtL.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.6
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.6
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//z2yahl2uefxDCl0nogcRBstwruJ.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.8
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.8
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.9
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.9
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//59SVNwLfoMnZPPB6ukW6dlPxAdI.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.5
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.5
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//mvIvNKRIJPPS7WSFarFhOAGIVnU.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.6
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.6
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//jOgbnL5FB30pprEjZaY1E1iPtPM.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.0
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.0
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//3qO7wycn6o0lUJf15dupMFbEBTY.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.8
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.8
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//ggf37TpcKaxwguhvtNn6MQpyqBn.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.4
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.4
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//f2PVrphK0u81ES256lw3oAZuF3x.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//u4ikorO4E3PouLRRwGaRuhFvsl3.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.4
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.4
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//e0vrbTmTf2ZcW5CIS9qJ8FDbsU9.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  8.4
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  8.4
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//62HCnUTziyWcpDaBO2i1DX17ljH.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  5.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  5.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//aGBuiirBIQ7o64FmJxO53eYDuro.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.0
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.0
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//rLrfEvJhQP3SubJR9SYwHWE9tlZ.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//gPn9e8eP7TeKQU4IeWAMzOajR40.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-warning"
+                              >
+                                 
+                                <span>
+                                  6.9
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  6.9
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//6b7swg6DLqXCO3XUsMnv6RwDMW2.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-success"
+                              >
+                                 
+                                <span>
+                                  7.7
+                                  /10
+                                </span>
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  7.7
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//2Y4F9BHkacKIMnDBZI3GGKpG1If.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="swiper-slide"
+                        >
+                          <div>
+                            <div
+                              class="card w-100 m-5 mx-2 movie-card shadow-lg position-relative"
+                            >
+                              <span
+                                class="text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-info"
+                              >
+                                 
+                                Soon
+                                <span
+                                  class="visually-hidden"
+                                >
+                                  Rating: 
+                                  0.0
+                                  /10
+                                </span>
+                              </span>
+                              <img
+                                src="https://image.tmdb.org/t/p/w500//bxCTPBtVduUotUqKMBgz6lJQUJi.jpg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-button-prev"
+                      />
+                      <div
+                        class="swiper-button-next"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center "
+        >
+          <div
+            class="spinner-border text-primary watch-profile-loading"
+            role="status"
+          >
+            <span
+              class="visually-hidden"
+            >
+              Loading...
+            </span>
+          </div>
+          <h5
+            class="display-5 text-primary"
+          >
+            Grabbing all Shows...
+          </h5>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
