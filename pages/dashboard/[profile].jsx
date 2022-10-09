@@ -76,35 +76,40 @@ const ProfileDashboard = ({
 	const grabMovieData = async (movie) => {
 		// Grabs the data for the movie video from the api.
 		// Return videos which have a trailer and sets the MovieModal hooks
-		setMovieModalLoading(true);
-		let data;
-		if (movie.media_type === undefined) {
-			// If the media_type doesn't exist abort and close the modal
-			console.error("Could not grab media data!");
-			setMovieModalData({
-				movie: { title: "Title" },
-			});
-			closeModal();
-			setMovieModalLoading(false);
-			return false;
-		} else {
-			if (movie.media_type === "movie") {
-				const result = await axios.get(`/api/movies/video/movie/${movie.id}`);
-				data = result.data;
-			} else if (movie.media_type === "tv") {
-				const result = await axios.get(`/api/movies/video/tv/${movie.id}`);
-				data = result.data;
-				movie.title = movie.name;
-			}
-			const res = [];
-			for (let i of data.data.results) {
-				// Only grab videos that have a type of Trailer, and are from youtube
-				if (i.type === "Trailer" && i.site === "YouTube") {
-					res.push(i);
+		try {
+			setMovieModalLoading(true);
+			let data;
+			if (movie.media_type === undefined) {
+				// If the media_type doesn't exist abort and close the modal
+				console.error("Could not grab media data!");
+				setMovieModalData({
+					movie: { title: "Title" },
+				});
+				closeModal();
+				setMovieModalLoading(false);
+				return false;
+			} else {
+				if (movie.media_type === "movie") {
+					const result = await axios.get(`/api/movies/video/movie/${movie.id}`);
+					data = result.data;
+				} else if (movie.media_type === "tv") {
+					const result = await axios.get(`/api/movies/video/tv/${movie.id}`);
+					data = result.data;
+					movie.title = movie.name;
 				}
+				const res = [];
+				for (let i of data.data.results) {
+					// Only grab videos that have a type of Trailer, and are from youtube
+					if (i.type === "Trailer" && i.site === "YouTube") {
+						res.push(i);
+					}
+				}
+				setMovieModalData({ movie, video: res });
+				setMovieModalLoading(false);
 			}
-			setMovieModalData({ movie, video: res });
-			setMovieModalLoading(false);
+		} catch (e) {
+			console.error(e);
+			setShowModal(false);
 		}
 	};
 
@@ -113,12 +118,16 @@ const ProfileDashboard = ({
 		// Otherwise return the user to home page
 		if (searching) {
 			setPageComponents("Loading");
-			const fetchData = async () => {
-				const { data } = await axios.get(`/api/movies/search/${searching}`);
-				const res = data.data;
-				setSearchData(res);
-			};
-			fetchData();
+			try {
+				const fetchData = async () => {
+					const { data } = await axios.get(`/api/movies/search/${searching}`);
+					const res = data.data;
+					setSearchData(res);
+				};
+				fetchData();
+			} catch (e) {
+				console.error(e);
+			}
 		} else {
 			setPageComponents("Home");
 		}
@@ -141,6 +150,11 @@ const ProfileDashboard = ({
 			<Head>
 				<title>{`${watchProfile.name}'s Dashboard`}</title>
 			</Head>
+			<div id="state-trackers">
+				<div hidden data-testid="pageComponents">
+					{pageComponents}
+				</div>
+			</div>
 			<div className="navbar-margin">
 				<NavBar
 					searching={searching}

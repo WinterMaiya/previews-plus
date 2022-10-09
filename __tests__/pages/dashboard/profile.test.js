@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen, getByTestId } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import grabMovieDataInitialize from "../../../components/helper-functions/grabMovieDataInitialize";
 import ProfileDashboard from "../../../pages/dashboard/[profile]";
 import movieDataMock from "../../../__mocks__/movieDataMock";
+import userEvent from "@testing-library/user-event";
 
 let movieData;
 let session;
@@ -11,7 +11,7 @@ let checkUser;
 let watchProfile;
 
 // Testing help provided from https://github.com/nextauthjs/next-auth/discussions/4185
-jest.mock("next-auth/react", () => {
+jest.mock("next-auth/react", async () => {
 	const originalModule = jest.requireActual("next-auth/react");
 	const mockSession = {
 		expires: new Date(Date.now() + 2 * 86400).toISOString(),
@@ -148,5 +148,41 @@ describe("Test Profile Dashboard", () => {
 		expect(screen.getByTestId("navbar-switch-profile")).toBeInTheDocument();
 		expect(screen.getByTestId("navbar-info")).toBeInTheDocument();
 		expect(screen.getByTestId("navbar-logout")).toBeInTheDocument();
+	});
+	it("Starts component with Home", async () => {
+		render(
+			<ProfileDashboard
+				movieData={movieData}
+				session={session}
+				watchList={watchList}
+				checkUser={checkUser}
+				watchProfile={watchProfile}
+			/>
+		);
+
+		const pageComponents = screen.getByTestId("pageComponents");
+		expect(pageComponents.textContent).toBe("Home");
+	});
+	it("Can Change Components with NavBar Buttons", async () => {
+		render(
+			<ProfileDashboard
+				movieData={movieData}
+				session={session}
+				watchList={watchList}
+				checkUser={checkUser}
+				watchProfile={watchProfile}
+			/>
+		);
+		const user = userEvent.setup();
+
+		// const pageComponents = getByTestId("pageComponents");
+		// const navbarItemMovies = getByTestId(container, "navbar-item-movies");
+		// const navbarItemShows = getByTestId(container, "navbar-item-shows");
+
+		expect(screen.getByTestId("pageComponents")).toHaveTextContent("Home");
+		await user.click(screen.getByTestId("navbar-info"));
+		expect(screen.getByTestId("pageComponents")).toHaveTextContent("Info");
+		// fireEvent.click(navbarItemShows);
+		// expect(pageComponents.textContent).toBe("Shows");
 	});
 });

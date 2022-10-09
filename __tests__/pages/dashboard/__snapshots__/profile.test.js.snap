@@ -6,6 +6,16 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
     class="bg-dark text-white bg-gradient-reverse "
   >
     <div
+      id="state-trackers"
+    >
+      <div
+        data-testid="pageComponents"
+        hidden=""
+      >
+        Home
+      </div>
+    </div>
+    <div
       class="navbar-margin"
     >
       <nav

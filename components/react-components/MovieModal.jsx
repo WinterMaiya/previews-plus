@@ -27,35 +27,43 @@ const MovieModal = ({
 	// movieModalData.video will contain an array of all the videos this media has.
 	// movieModalData.movie will contain the data for the movie similar to what is in MOVIE_DATA
 	const addToWatchList = async () => {
-		let newData;
-		const { data } = await axios.put(
-			`/api/list/${movieModalData.movie.id}?profile=${watchProfile.id}&typeOf=${movieModalData.movie.media_type}&movieTitle=${movieModalData.movie.title}&moviePoster=${movieModalData.movie.poster_path}`
-		);
-		let oldData = data;
-		if (oldData.typeOf === "movie") {
-			const result = await axios.get(
-				`/api/movies/info/movie/${oldData.TMDBMovieID}`
+		try {
+			let newData;
+			const { data } = await axios.put(
+				`/api/list/${movieModalData.movie.id}?profile=${watchProfile.id}&typeOf=${movieModalData.movie.media_type}&movieTitle=${movieModalData.movie.title}&moviePoster=${movieModalData.movie.poster_path}`
 			);
-			newData = result.data.data;
-		} else {
-			const result = await axios.get(
-				`/api/movies/info/tv/${oldData.TMDBMovieID}`
-			);
-			newData = result.data.data;
+			let oldData = data;
+			if (oldData.typeOf === "movie") {
+				const result = await axios.get(
+					`/api/movies/info/movie/${oldData.TMDBMovieID}`
+				);
+				newData = result.data.data;
+			} else {
+				const result = await axios.get(
+					`/api/movies/info/tv/${oldData.TMDBMovieID}`
+				);
+				newData = result.data.data;
+			}
+			movieListDispatch({ type: "update", payload: newData });
+		} catch (e) {
+			console.error(e);
 		}
-		movieListDispatch({ type: "update", payload: newData });
 	};
 
 	const removeFromWatchList = async () => {
-		const { data } = await axios.delete(
-			`/api/list/${movieModalData.movie.id}?profile=${watchProfile.id}`
-		);
-		let result = data;
-		if (result.message === "Success") {
-			movieListDispatch({ type: "delete", payload: result.id });
-		}
-		if (result.message === "Not Found") {
-			console.error("Item was not found in list when attempting to delete");
+		try {
+			const { data } = await axios.delete(
+				`/api/list/${movieModalData.movie.id}?profile=${watchProfile.id}`
+			);
+			let result = data;
+			if (result.message === "Success") {
+				movieListDispatch({ type: "delete", payload: result.id });
+			}
+			if (result.message === "Not Found") {
+				console.error("Item was not found in list when attempting to delete");
+			}
+		} catch (e) {
+			console.error(e);
 		}
 	};
 
@@ -70,18 +78,22 @@ const MovieModal = ({
 	}
 
 	const grabImages = async () => {
-		if (!movieModalLoading) {
-			if (movieModalData.movie.media_type === "movie") {
-				const { data } = await axios.get(
-					`/api/movies/image/movie/${movieModalData.movie.id}`
-				);
-				setImageData([...data.data.backdrops]);
-			} else {
-				const { data } = await axios.get(
-					`/api/movies/image/tv/${movieModalData.movie.id}`
-				);
-				setImageData([...data.data.backdrops]);
+		try {
+			if (!movieModalLoading) {
+				if (movieModalData.movie.media_type === "movie") {
+					const { data } = await axios.get(
+						`/api/movies/image/movie/${movieModalData.movie.id}`
+					);
+					setImageData([...data.data.backdrops]);
+				} else {
+					const { data } = await axios.get(
+						`/api/movies/image/tv/${movieModalData.movie.id}`
+					);
+					setImageData([...data.data.backdrops]);
+				}
 			}
+		} catch (e) {
+			console.error(e);
 		}
 	};
 

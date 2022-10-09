@@ -16,24 +16,28 @@ const MovieBanner = ({
 	const grabVideoData = async (movie) => {
 		// Grabs the data for the movie video from the api.
 		// Return videos which have a trailer and sets the MovieModal hooks
-		let data;
+		try {
+			let data;
 
-		if (movie.media_type === "movie") {
-			const result = await axios.get(`/api/movies/video/movie/${movie.id}`);
-			data = result.data;
-		} else if (movie.media_type === "tv") {
-			const result = await axios.get(`/api/movies/video/tv/${movie.id}`);
-			data = result.data;
-			movie.title = movie.name;
-		}
-		const res = [];
-		for (let i of data.data.results) {
-			// Only grab videos that have a type of Trailer, and are from youtube
-			if (i.type === "Trailer" && i.site === "YouTube") {
-				res.push(i);
+			if (movie.media_type === "movie") {
+				const result = await axios.get(`/api/movies/video/movie/${movie.id}`);
+				data = result.data;
+			} else if (movie.media_type === "tv") {
+				const result = await axios.get(`/api/movies/video/tv/${movie.id}`);
+				data = result.data;
+				movie.title = movie.name;
 			}
+			const res = [];
+			for (let i of data.data.results) {
+				// Only grab videos that have a type of Trailer, and are from youtube
+				if (i.type === "Trailer" && i.site === "YouTube") {
+					res.push(i);
+				}
+			}
+			setVideoData(res);
+		} catch (e) {
+			console.error(e);
 		}
-		setVideoData(res);
 	};
 
 	useEffect(() => {
@@ -41,36 +45,44 @@ const MovieBanner = ({
 	}, []);
 
 	const removeFromWatchList = async () => {
-		const { data } = await axios.delete(
-			`/api/list/${movie.id}?profile=${watchProfile.id}`
-		);
-		let result = data;
-		if (result.message === "Success") {
-			movieListDispatch({ type: "delete", payload: result.id });
-		}
-		if (result.message === "Not Found") {
-			console.error("Item was not found in list when attempting to delete");
+		try {
+			const { data } = await axios.delete(
+				`/api/list/${movie.id}?profile=${watchProfile.id}`
+			);
+			let result = data;
+			if (result.message === "Success") {
+				movieListDispatch({ type: "delete", payload: result.id });
+			}
+			if (result.message === "Not Found") {
+				console.error("Item was not found in list when attempting to delete");
+			}
+		} catch (e) {
+			console.error(e);
 		}
 	};
 
 	const addToWatchList = async () => {
-		let newData;
-		const { data } = await axios.put(
-			`/api/list/${movie.id}?profile=${watchProfile.id}&typeOf=${movie.media_type}&movieTitle=${movie.title}&moviePoster=${movie.poster_path}`
-		);
-		let oldData = data;
-		if (oldData.typeOf === "movie") {
-			const result = await axios.get(
-				`/api/movies/info/movie/${oldData.TMDBMovieID}`
+		try {
+			let newData;
+			const { data } = await axios.put(
+				`/api/list/${movie.id}?profile=${watchProfile.id}&typeOf=${movie.media_type}&movieTitle=${movie.title}&moviePoster=${movie.poster_path}`
 			);
-			newData = result.data.data;
-		} else {
-			const result = await axios.get(
-				`/api/movies/info/tv/${oldData.TMDBMovieID}`
-			);
-			newData = result.data.data;
+			let oldData = data;
+			if (oldData.typeOf === "movie") {
+				const result = await axios.get(
+					`/api/movies/info/movie/${oldData.TMDBMovieID}`
+				);
+				newData = result.data.data;
+			} else {
+				const result = await axios.get(
+					`/api/movies/info/tv/${oldData.TMDBMovieID}`
+				);
+				newData = result.data.data;
+			}
+			movieListDispatch({ type: "update", payload: newData });
+		} catch (e) {
+			console.error(e);
 		}
-		movieListDispatch({ type: "update", payload: newData });
 	};
 
 	return (
