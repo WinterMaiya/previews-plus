@@ -18,6 +18,10 @@ const ProfileDashboard = ({
 	movieData,
 	watchList,
 }) => {
+	// TODO: make the like buttons work
+	// TODO: add tests
+	// TODO: create info page
+	// TODO: add TMDBMovieID brands
 	// Toggles what is shown to the user. Home, Searching, Movies, TvShows, Loading, Info
 	const [pageComponents, setPageComponents] = useState("Home");
 	const [searching, setSearching] = useState("");
