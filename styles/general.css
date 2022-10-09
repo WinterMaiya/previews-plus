@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Satisfy&display=swap");
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Satisfy', cursive; */
+
+.satisfy-font {
+	font-family: "Satisfy", cursive !important;
+	font-size: xx-large !important;
+}
+
+.amatic-font {
+	font-family: "Amatic SC", cursive !important;
+}
+
+body {
+	background-color: #121212;
+}
+.parallax {
+	/* Set a specific height */
+	min-height: 500px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.up-and-down {
+	animation: MoveUpDown 2s ease-out infinite;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+@keyframes MoveUpDown {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-50px);
+	}
+}
+
+.navbar-margin {
+	margin-bottom: 4rem;
+}

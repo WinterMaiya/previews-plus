@@ -1,12 +1,13 @@
+// Bringing in bootstrap. These will edit the default color paterns.
 $theme-colors: (
-	"primary": #145bea,
-	"secondary": #833bec,
-	"success": #1ce1ac,
+	"primary": #F44336,
+	"secondary": #E0E0E0,
+	"success": #66BB6A,
 	"info": #ff7d50,
-	"warning": #ffbe0b,
-	"danger": #ff007f,
-	"light": #c0ccda,
-	"dark": #001738,
+	"warning": #FFCA28,
+	"danger": #EF5350,
+	"light": #000000,
+	"dark": #121212,
 );
 
 @import '/node_modules/bootstrap/scss/bootstrap.scss';

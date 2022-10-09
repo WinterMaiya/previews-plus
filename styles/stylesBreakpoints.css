@@ -1,0 +1,18 @@
+/* Center class. Checks to see if the width is big enough to center items on a screen
+for small screens using position absolute on the entire screen is ill advised */
+@media (min-width: 768px) {
+	.center-screen {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		align-self: center;
+		transform: translate(-50%, -50%);
+	}
+}
+@media (max-width: 768px) {
+	.center-screen {
+		position: relative;
+		top: 0%;
+		left: 0%;
+	}
+}

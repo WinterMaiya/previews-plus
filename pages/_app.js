@@ -1,7 +1,13 @@
-import '../styles/scss/global.scss'
+import "../styles/scss/global.scss";
+import "swiper/css/bundle";
+import "../styles/customCards.css";
+import "../styles/watchProfile.css";
+import "../styles/stylesBreakpoints.css";
+import "../styles/circularButtons.css";
+import "../styles/general.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => {
+	return <Component {...pageProps} />;
+};
 
-export default MyApp
+export default App;
