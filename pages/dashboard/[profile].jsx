@@ -109,7 +109,6 @@ const ProfileDashboard = ({
 			}
 		} catch (e) {
 			console.error(e);
-			setShowModal(false);
 		}
 	};
 
@@ -120,9 +119,13 @@ const ProfileDashboard = ({
 			setPageComponents("Loading");
 			try {
 				const fetchData = async () => {
-					const { data } = await axios.get(`/api/movies/search/${searching}`);
-					const res = data.data;
-					setSearchData(res);
+					try {
+						const { data } = await axios.get(`/api/movies/search/${searching}`);
+						const res = data.data;
+						setSearchData(res);
+					} catch (e) {
+						console.error(e);
+					}
 				};
 				fetchData();
 			} catch (e) {
@@ -150,9 +153,19 @@ const ProfileDashboard = ({
 			<Head>
 				<title>{`${watchProfile.name}'s Dashboard`}</title>
 			</Head>
-			<div id="state-trackers">
+			{/* For testing purposes */}
+			<div id="state-trackers" hidden>
 				<div hidden data-testid="pageComponents">
 					{pageComponents}
+				</div>
+				<div hidden data-testid="dashboardState">
+					{dashboardState}
+				</div>
+				<div hidden data-testid="searching">
+					{searching}
+				</div>
+				<div hidden data-testid="showModal">
+					{showModal ? "true" : "false"}
 				</div>
 			</div>
 			<div className="navbar-margin">

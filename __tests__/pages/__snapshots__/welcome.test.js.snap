@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome Page Snapshot 1`] = `
+<div>
+  <div>
+    <section
+      class="text-white"
+    >
+      <div
+        class="container my-5"
+      >
+        <h1
+          class="text-center satisfy-font"
+        >
+          Previews+
+        </h1>
+        <div
+          class="row text-center"
+        >
+          <div
+            class="col"
+          >
+            <button
+              class="text-white btn btn-primary"
+            >
+              Sign in
+            </button>
+          </div>
+          <div
+            class="col"
+          >
+            View this project on
+             
+            <a
+              href="https://github.com/WinterMaiya/previewsPlus"
+            >
+              Github
+            </a>
+          </div>
+        </div>
+        <div
+          class="row text-center"
+        >
+          <p>
+            TODO: Data being added...
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, getByTestId } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import ProfileDashboard from "../../../pages/dashboard/[profile]";
 import movieDataMock from "../../../__mocks__/movieDataMock";
@@ -175,14 +175,63 @@ describe("Test Profile Dashboard", () => {
 		);
 		const user = userEvent.setup();
 
-		// const pageComponents = getByTestId("pageComponents");
-		// const navbarItemMovies = getByTestId(container, "navbar-item-movies");
-		// const navbarItemShows = getByTestId(container, "navbar-item-shows");
-
 		expect(screen.getByTestId("pageComponents")).toHaveTextContent("Home");
 		await user.click(screen.getByTestId("navbar-info"));
 		expect(screen.getByTestId("pageComponents")).toHaveTextContent("Info");
-		// fireEvent.click(navbarItemShows);
-		// expect(pageComponents.textContent).toBe("Shows");
+		await user.click(screen.getByTestId("navbar-item-home"));
+		expect(screen.getByTestId("pageComponents")).toHaveTextContent("Home");
+		expect(screen.getByTestId("dashboardState")).toHaveTextContent("Home");
+		await user.click(screen.getByTestId("navbar-item-movies"));
+		expect(screen.getByTestId("dashboardState")).toHaveTextContent("Movie");
+		expect(screen.getByTestId("pageComponents")).toHaveTextContent("Home");
+		await user.click(screen.getByTestId("navbar-item-shows"));
+		expect(screen.getByTestId("dashboardState")).toHaveTextContent("Tv");
+		expect(screen.getByTestId("pageComponents")).toHaveTextContent("Home");
+	});
+	it("Can activate search bar", async () => {
+		render(
+			<ProfileDashboard
+				movieData={movieData}
+				session={session}
+				watchList={watchList}
+				checkUser={checkUser}
+				watchProfile={watchProfile}
+			/>
+		);
+		const user = userEvent.setup();
+
+		expect(screen.getByTestId("pageComponents")).toHaveTextContent("Home");
+		expect(screen.getByTestId("searching")).toHaveTextContent("");
+		await user.type(screen.getByTestId("navbar-searchbar"), "test");
+		expect(screen.getByTestId("searching")).toHaveTextContent("test");
+		expect(screen.getByTestId("pageComponents")).toHaveTextContent("Loading");
+		await user.type(screen.getByTestId("navbar-searchbar"), "testers");
+		expect(screen.getByTestId("searching")).toHaveTextContent("testers");
+		expect(screen.getByTestId("pageComponents")).toHaveTextContent("Loading");
+		await user.click(screen.getByTestId("navbar-item-home"));
+		expect(screen.getByTestId("pageComponents")).toHaveTextContent("Home");
+		expect(screen.getByTestId("searching")).toHaveTextContent("");
+	});
+	it("Opens the Modal when clicking on an image card", async () => {
+		// TODO: Fix test
+		render(
+			<ProfileDashboard
+				movieData={movieData}
+				session={session}
+				watchList={watchList}
+				checkUser={checkUser}
+				watchProfile={watchProfile}
+			/>
+		);
+		const user = userEvent.setup();
+		expect(screen.getByTestId("showModal")).toHaveTextContent("false");
+		const movieCards = screen.getAllByTestId("movie-card");
+		expect(movieCards.length).toBeGreaterThan(2);
+		console.log(movieCards);
+		await user.click(movieCards[1]);
+		await waitFor(() => {
+			expect(screen.getByTestId("showModal")).toHaveTextContent("true");
+		});
+		expect(screen.getByTestId("showModal")).toHaveTextContent("false");
 	});
 });

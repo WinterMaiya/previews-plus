@@ -55,6 +55,7 @@ const MovieCard = ({ movie, openModal, grabMovieData, watchProfile }) => {
 				</span>
 				{movie.poster_path ? (
 					<img
+						data-testid="movie-card"
 						src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
 						// data-bs-toggle="modal"
 						// data-bs-target="#MovieModal"
