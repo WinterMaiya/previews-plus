@@ -80,7 +80,7 @@ const EditWatchProfile = ({
 							</div>
 							<div className="mb-3 text-center">
 								<button
-									className="btn btn-primary text-white"
+									className="btn text-white btn-outline-primary"
 									data-testid="button"
 								>
 									Submit

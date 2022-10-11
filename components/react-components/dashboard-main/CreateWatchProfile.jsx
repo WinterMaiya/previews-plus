@@ -70,7 +70,10 @@ const CreateWatchProfile = ({ closeModal, setLoading }) => {
 								/>
 							</div>
 							<div className="mb-3 text-center">
-								<button className="btn btn-primary" data-testid="button">
+								<button
+									className="btn text-white btn-outline-primary"
+									data-testid="button"
+								>
 									Start Watching
 								</button>
 							</div>
