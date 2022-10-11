@@ -64,7 +64,6 @@ export default async function handler(req, res) {
 				},
 				include: { movies: true },
 			});
-			console.log(list);
 			return res.status(200).json(list);
 		}
 
