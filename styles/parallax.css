@@ -1,0 +1,40 @@
+body,
+html {
+	height: 100%;
+}
+
+.parallax {
+	/* Full height */
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-1 {
+	/* The image used */
+	background-image: url("https://www.themoviedb.org/t/p/original/cI1RBfqXbWaITTjcKGYLhd9F083.jpg");
+}
+
+.bg-2 {
+	/* The image used */
+	background-image: url("https://www.themoviedb.org/t/p/original/Ab8mkHmkYADjU7wQiOkia9BzGvS.jpg");
+}
+
+.bg-3 {
+	/* The image used */
+	background-image: url("https://www.themoviedb.org/t/p/original/84XPpjGvxNyExjSuLQe0SzioErt.jpg");
+}
+
+.bg-4 {
+	/* The image used */
+	background-image: url("https://www.themoviedb.org/t/p/original/67HggiWaP9ZLv5sPYmyRV37yAJM.jpg");
+}
+
+.bg-5 {
+	/* The image used */
+	background-image: url("https://www.themoviedb.org/t/p/original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg");
+}

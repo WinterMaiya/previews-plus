@@ -16,7 +16,11 @@ const MovieCarousel = ({
 
 	useEffect(() => {
 		if (swiper.current !== undefined) {
-			swiper.current.swiper.update();
+			try {
+				swiper.current.swiper.update();
+			} catch (e) {
+				// Don't update swiper
+			}
 		}
 	}, [movieData]);
 

@@ -45,3 +45,7 @@ body {
 .navbar-margin {
 	margin-bottom: 4rem;
 }
+
+.make-logo-bigger {
+	font-size: 4rem !important;
+}

@@ -5,6 +5,7 @@ import "../styles/watchProfile.css";
 import "../styles/stylesBreakpoints.css";
 import "../styles/circularButtons.css";
 import "../styles/general.css";
+import "../styles/parallax.css";
 
 const App = ({ Component, pageProps }) => {
 	return <Component {...pageProps} />;
