@@ -23,7 +23,6 @@ const MovieCard = ({ movie, openModal, grabMovieData, watchProfile }) => {
 	};
 	const rating = movie.vote_average.toFixed(1);
 	const clickedVideo = async () => {
-		console.log(movie, "Movie clicked");
 		if (movie.media_type !== undefined) {
 			const { data } = await axios.put(`/api/movies/watched/${movie.id}?`, {
 				params: {

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { getSession } from "next-auth/react";
 
-const PreviewsPlus = ({ session }) => {
+const PreviewsPlus = () => {
 	return (
 		<div>
 			<Head>

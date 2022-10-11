@@ -74,7 +74,6 @@ const MovieModal = ({
 			const { data } = await axios.put(
 				`/api/likes/${movieModalData.movie.id}?profile=${watchProfile.id}&rating=${rating}`
 			);
-			console.log(data);
 			if (data.success === true) {
 				setLikedData(rating);
 			}
@@ -93,7 +92,6 @@ const MovieModal = ({
 					},
 				}
 			);
-			console.log(data, "Data from grabMovieRating");
 			if (data.success === true) {
 				setLikedData(data.data);
 			}
@@ -136,8 +134,6 @@ const MovieModal = ({
 		grabImages();
 		grabMovieRating();
 	}, [movieModalLoading]);
-
-	console.log(movieModalData);
 
 	return (
 		<div className="modal-dialog modal-fullscreen text-white">
@@ -202,7 +198,7 @@ const MovieModal = ({
 											}
 										>
 											<button
-												className="mx-1 p-auto text-nowrap btn btn-sm rounded btn-outline-secondary"
+												className="mx-1 p-auto text-nowrap btn rounded btn-outline-primary"
 												onClick={() => {
 													removeFromWatchList();
 												}}

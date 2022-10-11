@@ -167,10 +167,9 @@ const MovieBanner = ({
 										}
 									>
 										<button
-											className="p-auto text-nowrap btn btn-sm btn-danger mx-2"
+											className="p-auto text-nowrap btn btn-sm btn-danger"
 											onClick={() => {
-												grabMovieData(movie);
-												openModal();
+												removeFromWatchList();
 											}}
 										>
 											<svg
@@ -199,8 +198,7 @@ const MovieBanner = ({
 										<button
 											className="btn btn-sm btn-secondary rounded"
 											onClick={() => {
-												grabMovieData(movie);
-												openModal();
+												addToWatchList();
 											}}
 										>
 											<svg

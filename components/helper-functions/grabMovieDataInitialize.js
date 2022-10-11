@@ -23,15 +23,6 @@ const grabMovieDataInitialize = async () => {
 	};
 	await getTrendingWeekly();
 
-	// Get upcoming movies in theater
-	// const getUpcomingMovies = async () => {
-	// 	const { data } = await axios.get(
-	// 		`https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.TMDB_API_KEY}`
-	// 	);
-	// 	MOVIE_DATA.upcomingMovies = data;
-	// };
-	// await getUpcomingMovies();
-
 	const getPopularTvShows = async () => {
 		const { data } = await axios.get(
 			`https://api.themoviedb.org/3/tv/popular?api_key=${process.env.TMDB_API_KEY}`
@@ -49,14 +40,6 @@ const grabMovieDataInitialize = async () => {
 		MOVIE_DATA.movie.popular.media_type = "movie";
 	};
 	await getPopularMoviesShows();
-
-	// const getNowPlaying = async () => {
-	// 	const { data } = await axios.get(
-	// 		`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.TMDB_API_KEY}`
-	// 	);
-	// 	MOVIE_DATA.nowPlaying = data;
-	// };
-	// await getNowPlaying();
 
 	// Grab the genres and there names from the api. Future data can call upon this.
 	const getGenreListMovies = async () => {
