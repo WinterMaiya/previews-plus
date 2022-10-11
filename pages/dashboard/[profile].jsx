@@ -18,8 +18,6 @@ const ProfileDashboard = ({
 	movieData,
 	watchList,
 }) => {
-	// TODO: make the like buttons work
-	// TODO: add tests
 	// TODO: create info page
 	// TODO: add TMDBMovieID brands
 	// Toggles what is shown to the user. Home, Searching, Movies, TvShows, Loading, Info
@@ -320,6 +318,7 @@ export async function getServerSideProps({ req, query, res }) {
 			// If the rating is 2 or 3 and 2 or 3
 			// This will make that genre appear higher in the preferences
 			for (let mov of watchProfile.watched) {
+				let tier = mov.rating === 0 ? 1 : mov.rating;
 				if (mov.rating !== 1) {
 					let genreArr = mov.genre.split(",");
 					// Checks the type of then iterates through the genres.
@@ -327,18 +326,18 @@ export async function getServerSideProps({ req, query, res }) {
 					if (mov.typeOf === "movie") {
 						for (let genre of genreArr) {
 							if (!watchProfile.preference.movie[genre]) {
-								watchProfile.preference.movie[genre] = 1;
+								watchProfile.preference.movie[genre] = tier;
 							} else {
-								watchProfile.preference.movie[genre]++;
+								watchProfile.preference.movie[genre] += tier;
 							}
 						}
 					}
 					if (mov.typeOf === "tv") {
 						for (let genre of genreArr) {
 							if (!watchProfile.preference.tv[genre]) {
-								watchProfile.preference.tv[genre] = 1;
+								watchProfile.preference.tv[genre] = tier;
 							} else {
-								watchProfile.preference.tv[genre]++;
+								watchProfile.preference.tv[genre] += tier;
 							}
 						}
 					}
