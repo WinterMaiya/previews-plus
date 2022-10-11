@@ -51,7 +51,7 @@ export default async function handler(req, res) {
 
 			return res
 				.status(200)
-				.json({ message: "Successfully Deleted Watch Profile" });
+				.json({ success: true, message: "Successfully Deleted Watch Profile" });
 		} catch (e) {
 			console.error(e);
 			return res.status(412).json({ error: e });
