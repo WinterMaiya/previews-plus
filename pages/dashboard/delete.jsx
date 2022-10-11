@@ -30,7 +30,7 @@ const DeleteWatchProfile = ({ watchProfiles }) => {
 						<div className="row">
 							<div className="col text-center">
 								<h1 className="display-2" data-testid="header">
-									Which Profile Would You Like To Remove?
+									Delete a Profile
 								</h1>
 							</div>
 						</div>

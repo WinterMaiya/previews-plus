@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard Edit Profile Check Snapshot 1`] = `
+<div>
+  <div>
+    <section
+      class="container my-2 center-screen text-white"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col text-center"
+          >
+            <h1
+              class="display-1"
+              data-testid="header"
+            >
+              Edit Profile
+            </h1>
+          </div>
+        </div>
+        <div
+          class="row row-cols-2 row-cols-md-6"
+        >
+          <div
+            class="col"
+          >
+            <div
+              class="m-auto text-white"
+            >
+              <div
+                class="my-4 watch-profile"
+              >
+                <span
+                  style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                >
+                  <span
+                    style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                  >
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27200%27%20height=%27200%27/%3e"
+                      style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                    />
+                  </span>
+                  <img
+                    alt="Watch Profile Image"
+                    class="rounded-circle card-img-top watch-profile-image"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                  />
+                  <noscript />
+                </span>
+              </div>
+              <div
+                class="text-center"
+              >
+                <h2>
+                  Test Account
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="m-auto text-white"
+            >
+              <div
+                class="my-4 watch-profile"
+              >
+                <span
+                  style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                >
+                  <span
+                    style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                  >
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27200%27%20height=%27200%27/%3e"
+                      style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                    />
+                  </span>
+                  <img
+                    alt="Watch Profile Image"
+                    class="rounded-circle card-img-top watch-profile-image"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                  />
+                  <noscript />
+                </span>
+              </div>
+              <div
+                class="text-center"
+              >
+                <h2>
+                  Super Test Account
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row text-center justify-content-center"
+        >
+          <div
+            class="col-auto"
+          >
+            <button
+              class="btn btn-outline-secondary rounded"
+            >
+              <svg
+                class="bi bi-arrow-90deg-left"
+                fill="currentColor"
+                height="25"
+                viewBox="0 0 16 16"
+                width="25"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <span
+              hidden=""
+            >
+              Go Back
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
