@@ -18,6 +18,7 @@ const ProfileDashboard = ({
 	movieData,
 	watchList,
 }) => {
+	// TODO: Cleanup code
 	// TODO: create info page
 	// TODO: add TMDBMovieID brands
 	// Toggles what is shown to the user. Home, Searching, Movies, TvShows, Loading, Info
