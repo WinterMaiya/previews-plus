@@ -44,11 +44,12 @@ export default async function handler(req, res) {
 			}
 			const newWatched = await prisma.watched.create({
 				data: {
-					TMDBMovieID: movieId,
+					TMDBMovieID: id,
 					title: movieTitle,
 					watchProfileId: profile,
 					listId: watchProfile.list[0].id,
 					picture_ref: moviePoster,
+					genre: "[]",
 					typeOf,
 				},
 			});
