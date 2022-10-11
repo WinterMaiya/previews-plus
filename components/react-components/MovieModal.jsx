@@ -202,7 +202,7 @@ const MovieModal = ({
 											}
 										>
 											<button
-												className="mx-1 p-auto text-nowrap btn btn-sm rounded btn-outline-secondary"
+												className="mx-1 p-auto text-nowrap btn rounded btn-outline-primary"
 												onClick={() => {
 													removeFromWatchList();
 												}}
