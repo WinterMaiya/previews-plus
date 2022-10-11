@@ -49,12 +49,20 @@ export default async function handler(req, res) {
 				if (newWatched) {
 					return res
 						.status(201)
-						.json({ message: "Success", status: "Added Video to Watched" });
+						.json({
+							message: "Success",
+							success: true,
+							status: "Added Video to Watched",
+						});
 				}
 			}
 			return res
 				.status(200)
-				.json({ message: "Success", status: "Video already exists" });
+				.json({
+					message: "Success",
+					success: true,
+					status: "Video already exists",
+				});
 		}
 	} catch (e) {
 		console.error(e);
