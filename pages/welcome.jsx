@@ -1,6 +1,5 @@
 import { getSession, signIn } from "next-auth/react";
 import Head from "next/head";
-import axios from "axios";
 
 const WelcomePage = () => {
 	return (
@@ -21,18 +20,21 @@ const WelcomePage = () => {
 				<div className="container my-3">
 					<div className="row text-center"></div>
 					<div className="row text-center ">
-						<p className="fs-5">
-							<strong className="fst-italic">Previews+</strong> lets you stream
-							your favorite movies and tv shows'{" "}
-							<strong className="text-primary">trailers!</strong>
-						</p>
-						<p className="fs-6">
-							Create an account through{" "}
-							<strong className="text-primary">Github</strong> or{" "}
-							<strong className="text-primary">Google</strong>, make your own
-							watch profile, and start browsing our list of the most popular (or
-							obscure) trailers on the web:
-						</p>
+						<div>
+							<p className="fs-5">
+								<strong className="fst-italic">Previews+</strong> lets you
+								stream your favorite movies and tv shows'{" "}
+								<strong className="text-primary">trailers!</strong>
+							</p>
+							<p className="fs-6">
+								Create an account through{" "}
+								<strong className="text-primary">Github</strong> or{" "}
+								<strong className="text-primary">Google</strong>, make your own
+								watch profile, and start browsing our list of the most popular
+								(or obscure) trailers on the web:
+							</p>
+						</div>
+
 						<div className="col">
 							<button
 								className="text-white btn btn-outline-primary"
@@ -115,16 +117,16 @@ const WelcomePage = () => {
 							<p>
 								External API data thanks to <strong>TMDB:</strong>
 								{/*  */}
-								<div>
-									<a href="https://www.themoviedb.org">
-										<img
-											src="/images/tmdb_logo.svg"
-											width="100"
-											height="100"
-										></img>
-									</a>
-								</div>
 							</p>
+							<div>
+								<a href="https://www.themoviedb.org">
+									<img
+										src="/images/tmdb_logo.svg"
+										width="100"
+										height="100"
+									></img>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
