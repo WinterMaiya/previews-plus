@@ -4,29 +4,12 @@ import Router from "next/router";
 import { useState } from "react";
 
 const ProfileIcon = ({ profileData, setLoading }) => {
-	const [profileHover, setProfileHover] = useState(false);
-
-	const deleteProfile = async () => {
-		const deleteWatchProfile = await axios.delete(
-			`/api/watchprofile/${profileData.id}`
-		);
-		Router.push("/dashboard/");
-	};
-
 	const onClick = () => {
 		setLoading(true);
 		Router.push(`/dashboard/${profileData.id}`);
 	};
 	return (
-		<div
-			className="m-auto text-white"
-			onMouseEnter={() => {
-				setProfileHover(true);
-			}}
-			onMouseLeave={() => {
-				setProfileHover(false);
-			}}
-		>
+		<div className="m-auto text-white">
 			<div className="my-4 watch-profile">
 				<Image
 					src={profileData.profile_pic}

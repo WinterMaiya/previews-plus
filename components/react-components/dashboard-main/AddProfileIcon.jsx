@@ -4,18 +4,8 @@ import axios from "axios";
 import Router from "next/router";
 
 const AddProfileIcon = ({ openModal }) => {
-	const [profileHover, setProfileHover] = useState(false);
-
 	return (
-		<div
-			className="m-auto"
-			onMouseEnter={() => {
-				setProfileHover(true);
-			}}
-			onMouseLeave={() => {
-				setProfileHover(false);
-			}}
-		>
+		<div className="m-auto">
 			<div className="my-4 watch-profile">
 				<Image
 					src="/images/plusicon.png"

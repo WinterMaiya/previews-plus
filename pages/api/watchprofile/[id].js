@@ -9,6 +9,38 @@ export default async function handler(req, res) {
 		return res.status(401).json({ message: "Unauthorized" });
 	}
 	const { id } = req.query;
+	if (req.method === "PATCH") {
+		const { params } = req.body;
+		const { name, pic } = params;
+		try {
+			const user = await prisma.user.findFirstOrThrow({
+				where: {
+					email: session.user.email,
+				},
+			});
+			const watchProfile = await prisma.watchProfile.findFirstOrThrow({
+				where: {
+					id,
+					userId: user.id,
+				},
+			});
+
+			const edit = await prisma.watchProfile.update({
+				where: { id: watchProfile.id },
+				data: {
+					name,
+					profile_pic: pic,
+				},
+			});
+			if (edit) {
+				return res.status(200).json({ success: true, data: edit });
+			}
+			return res.status(404).json({ success: false, error: e });
+		} catch (e) {
+			console.error(e);
+			return res.status(412).json({ success: false, error: e });
+		}
+	}
 	if (req.method === "DELETE") {
 		// If the request is a DELETE request, delete that watchProfile and
 

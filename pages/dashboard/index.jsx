@@ -88,7 +88,12 @@ const Dashboard = ({ watchProfiles }) => {
 						</div>
 						<div className="row text-center justify-content-center">
 							<div className="col-auto">
-								<button className="btn btn-outline-secondary rounded">
+								<button
+									className="btn btn-outline-secondary rounded"
+									onClick={() => {
+										Router.push("/dashboard/edit");
+									}}
+								>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="25"
