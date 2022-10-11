@@ -246,11 +246,6 @@ const MovieModal = ({
 											</button>
 										</OverlayTrigger>
 									)}
-									{/* <OverlayTrigger
-										key={"dislike"}
-										placement={"top"}
-										overlay={<Tooltip id="tooltip-dislike">Dislike</Tooltip>}
-									> */}
 									<button
 										className={`btn ${
 											likedData === 1 ? "btn-danger" : "btn-outline-secondary"
@@ -271,7 +266,6 @@ const MovieModal = ({
 										</svg>{" "}
 										<span hidden>dislike</span>
 									</button>
-									{/* </OverlayTrigger> */}
 
 									<button
 										className={`btn ${
