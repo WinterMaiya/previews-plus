@@ -1,6 +1,5 @@
 import axios from "axios";
 import Router from "next/router";
-import { useState } from "react";
 import globalProfileImage from "../../helper-functions/GlobalProfileImage";
 import ProfileImages from "./ProfileImages";
 

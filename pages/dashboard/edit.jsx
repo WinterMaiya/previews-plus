@@ -1,6 +1,6 @@
 import { getSession } from "next-auth/react";
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Modal } from "react-bootstrap";
 import { prisma } from "../../components/helper-functions/prisma";
 import Router from "next/router";
@@ -21,15 +21,6 @@ const EditWatchProfilePage = ({ watchProfiles }) => {
 		setId(data.id);
 	};
 	const closeModal = () => setShowModal(false);
-
-	const len = 6 - watchProfiles.length;
-	useEffect(() => {
-		if (len === 6) {
-			// If the account has no watch profiles,
-			// then automatically let them create a new watch profile
-			Router.push("/dashboard/");
-		}
-	}, []);
 
 	return (
 		<div>

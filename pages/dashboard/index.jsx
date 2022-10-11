@@ -10,7 +10,6 @@ import CreateWatchProfile from "../../components/react-components/dashboard-main
 import ProfileIcon from "../../components/react-components/dashboard-main/ProfileIcon";
 
 const Dashboard = ({ watchProfiles }) => {
-	// TODO: create a edit page and delete page for the user to change and delete watchProfiles
 	// This is the main dashboard that lets a user choose their watchprofile
 	const [loading, setLoading] = useState(false);
 	const [showModal, setShowModal] = useState(false);

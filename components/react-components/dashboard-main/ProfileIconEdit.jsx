@@ -1,7 +1,4 @@
-import axios from "axios";
 import Image from "next/image";
-import Router from "next/router";
-import { useState } from "react";
 
 const ProfileIconEdit = ({ profileData, openModal }) => {
 	return (
