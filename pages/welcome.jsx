@@ -19,7 +19,7 @@ const WelcomePage = () => {
 						</div>
 						<div className="col">
 							View this project on{" "}
-							<a href="https://github.com/WinterMaiya/previewsPlus">Github</a>
+							<a href="https://github.com/WinterMaiya/previews-plus">Github</a>
 						</div>
 					</div>
 					<div className="row text-center">
