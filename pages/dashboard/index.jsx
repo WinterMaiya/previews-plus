@@ -15,7 +15,6 @@ const Dashboard = ({ watchProfiles }) => {
 	const [showModal, setShowModal] = useState(false);
 	const openModal = () => setShowModal(true);
 	const closeModal = () => setShowModal(false);
-	console.log(watchProfiles);
 
 	const len = 6 - watchProfiles.length;
 	useEffect(() => {

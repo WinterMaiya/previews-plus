@@ -3,7 +3,6 @@ import Head from "next/head";
 import axios from "axios";
 
 const WelcomePage = () => {
-	/* TODO: Create this page*/
 	return (
 		<div>
 			<Head>

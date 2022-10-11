@@ -18,17 +18,12 @@ const ProfileDashboard = ({
 	movieData,
 	watchList,
 }) => {
-	// TODO: Cleanup code
-	// TODO: create info page
-	// TODO: add TMDBMovieID brands
 	// Toggles what is shown to the user. Home, Searching, Movies, TvShows, Loading, Info
 	const [pageComponents, setPageComponents] = useState("Home");
 	const [searching, setSearching] = useState("");
 	const [searchData, setSearchData] = useState();
 	const [dashboardState, setDashboardState] = useState("Home");
 	const MOVIE_DATA = movieData;
-	console.log(MOVIE_DATA, "Movie Data for debuging");
-	console.log(watchProfile, "Watch Profile");
 
 	const reducer = (state, action) => {
 		// Reducer for the movieList state

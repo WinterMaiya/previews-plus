@@ -11,7 +11,6 @@ export default async function handler(req, res) {
 	const { movieId } = req.query;
 	const { params } = req.body;
 	const { profile, movieTitle, moviePoster, typeOf, genre } = params;
-	console.log(params);
 	if (!typeOf) {
 		// Status 422(Unprocessable Entity) when the parameters are invalid
 		return res.status(422).json({ message: "Incorrect Parameters" });
