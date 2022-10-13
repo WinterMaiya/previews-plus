@@ -58,6 +58,7 @@ const MovieCard = ({ movie, openModal, grabMovieData, watchProfile }) => {
 						src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
 						// data-bs-toggle="modal"
 						// data-bs-target="#MovieModal"
+						alt={`${movie.title ? movie.title : movie.name} poster`}
 						onClick={() => {
 							openModal();
 							grabMovieData(movie);

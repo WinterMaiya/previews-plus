@@ -90,6 +90,7 @@ const MovieBanner = ({
 			<img
 				className="rounded card-img"
 				src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+				alt={"Movie Backdrop image"}
 			></img>
 			<div className="card-img-overlay bg-dark bg-opacity-50">
 				<div className="container">
