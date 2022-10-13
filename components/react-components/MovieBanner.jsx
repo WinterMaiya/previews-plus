@@ -225,7 +225,7 @@ const MovieBanner = ({
 							{videoData ? (
 								<div className="col-4 col-md-5 col-xl-6 col-xxl-7">
 									<div className="d-none d-lg-block mt-3">
-										<div className="ratio ratio-16x9">
+										<div className="ratio ratio-16x9 border-top">
 											<iframe
 												src={`https://www.youtube.com/embed/${videoData[0].key}`}
 												title={""}
