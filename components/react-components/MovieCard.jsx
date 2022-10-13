@@ -44,13 +44,13 @@ const MovieCard = ({ movie, openModal, grabMovieData, watchProfile }) => {
 		<div>
 			<div className="card w-100 m-5 mx-2 movie-card shadow-lg position-relative">
 				<span
-					class={`text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-${movieRatingColor(
+					className={`text-dark position-absolute top-100 start-50 translate-middle badge rounded-circle bg-${movieRatingColor(
 						rating
 					)}`}
 				>
 					{" "}
 					{rating == 0.0 ? "Soon" : <span>{rating}/10</span>}
-					<span class="visually-hidden">Rating: {rating}/10</span>
+					<span className="visually-hidden">Rating: {rating}/10</span>
 				</span>
 				{movie.poster_path ? (
 					<img

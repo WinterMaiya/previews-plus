@@ -62,14 +62,14 @@ const EditWatchProfile = ({
 								<h2>Edit Watch Profile</h2>
 							</div>
 							<div className="mb-3">
-								<label for="name" class="form-label" data-testid="name">
+								<label for="name" className="form-label" data-testid="name">
 									{name ? `Hello ${name}!` : "Display Name"}
 								</label>
 								<input
 									data-testid="input"
 									type="text"
 									value={name}
-									class="form-control"
+									className="form-control"
 									id="name"
 									placeholder="Display Name"
 									onChange={(e) => {

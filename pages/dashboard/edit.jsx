@@ -74,7 +74,7 @@ const EditWatchProfilePage = ({ watchProfiles }) => {
 										width="25"
 										height="25"
 										fill="currentColor"
-										class="bi bi-arrow-90deg-left"
+										className="bi bi-arrow-90deg-left"
 										viewBox="0 0 16 16"
 									>
 										<path
