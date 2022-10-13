@@ -29,6 +29,9 @@ export default async function handler(req, res) {
 			// Status 422(Unprocessable Entity) when the parameters are invalid
 			return res.status(422).json({ message: "Incorrect Parameters" });
 		}
+		return res
+			.status(405)
+			.json({ success: false, message: "Method not allowed" });
 	} catch (e) {
 		console.error(e);
 		return res.status(404).json({ message: e });
