@@ -137,7 +137,7 @@ const ProfileDashboard = ({
 		} else {
 			setPageComponents("Home");
 		}
-	}, [searchData, searching]);
+	}, [searchData]);
 
 	return (
 		<div

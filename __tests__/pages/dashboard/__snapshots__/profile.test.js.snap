@@ -164,8 +164,6 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                 >
                   <li>
                     <a
-                      class="dropdown-item"
-                      data-testid="navbar-switch-profile"
                       href="/dashboard"
                     >
                       Switch Profile
@@ -210,6 +208,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
             class="card bg-dark text-white my-5"
           >
             <img
+              alt="Movie Backdrop image"
               class="rounded card-img"
               src="https://image.tmdb.org/t/p/original//pfAZP7JvTTxqgq7n6A1OYgkAdEW.jpg"
             />
@@ -427,6 +426,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Werewolf by Night poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//mvIvNKRIJPPS7WSFarFhOAGIVnU.jpg"
                               />
@@ -457,6 +457,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Luckiest Girl Alive poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//e0vrbTmTf2ZcW5CIS9qJ8FDbsU9.jpg"
                               />
@@ -487,6 +488,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Hellraiser poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//u4ikorO4E3PouLRRwGaRuhFvsl3.jpg"
                               />
@@ -517,6 +519,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="The Midnight Club poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//2Y4F9BHkacKIMnDBZI3GGKpG1If.jpg"
                               />
@@ -547,6 +550,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="The Lord of the Rings: The Rings of Power poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//mYLOqiStMxDK3fYZFirgrMt8z5d.jpg"
                               />
@@ -577,6 +581,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Mr. Harrigan's Phone poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//gPn9e8eP7TeKQU4IeWAMzOajR40.jpg"
                               />
@@ -607,6 +612,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Bullet Train poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//tVxDe01Zy3kZqaZRNiXFGDICdZk.jpg"
                               />
@@ -637,6 +643,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Catherine Called Birdy poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//a6welBP7DtjHDsr6fwT5IuCS33f.jpg"
                               />
@@ -667,6 +674,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Old People poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//nSguJmHeYv6cwTljOZduPJDTweS.jpg"
                               />
@@ -697,6 +705,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Glitch poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//dspwDOosidQT85oPDDHMM9zmaLw.jpg"
                               />
@@ -727,6 +736,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Significant Other poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//liGvBdUsyOfiTJjNCD55JJfISzb.jpg"
                               />
@@ -757,6 +767,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="House of the Dragon poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//z2yahl2uefxDCl0nogcRBstwruJ.jpg"
                               />
@@ -787,6 +798,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Hocus Pocus 2 poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//7ze7YNmUaX81ufctGqt0AgHxRtL.jpg"
                               />
@@ -817,6 +829,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="She-Hulk: Attorney at Law poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//3qO7wycn6o0lUJf15dupMFbEBTY.jpg"
                               />
@@ -847,6 +860,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Thor: Love and Thunder poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg"
                               />
@@ -877,6 +891,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Jeepers Creepers: Reborn poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//aGBuiirBIQ7o64FmJxO53eYDuro.jpg"
                               />
@@ -907,6 +922,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Monster High: The Movie poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//tn3GWm0Erehkpur8PUuYWxGpul5.jpg"
                               />
@@ -937,6 +953,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Star Wars: Andor poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//59SVNwLfoMnZPPB6ukW6dlPxAdI.jpg"
                               />
@@ -967,6 +984,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Smile poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//hiaeZKzwsk4y4atFhmncO5KRxeT.jpg"
                               />
@@ -997,6 +1015,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Dahmer – Monster: The Jeffrey Dahmer Story poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//f2PVrphK0u81ES256lw3oAZuF3x.jpg"
                               />
@@ -1100,6 +1119,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Dahmer – Monster: The Jeffrey Dahmer Story poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//f2PVrphK0u81ES256lw3oAZuF3x.jpg"
                               />
@@ -1130,6 +1150,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="The Lord of the Rings: The Rings of Power poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//mYLOqiStMxDK3fYZFirgrMt8z5d.jpg"
                               />
@@ -1160,6 +1181,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="House of the Dragon poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//z2yahl2uefxDCl0nogcRBstwruJ.jpg"
                               />
@@ -1190,6 +1212,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="She-Hulk: Attorney at Law poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//3qO7wycn6o0lUJf15dupMFbEBTY.jpg"
                               />
@@ -1220,6 +1243,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Chucky poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//kY0BogCM8SkNJ0MNiHB3VTM86Tz.jpg"
                               />
@@ -1250,6 +1274,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Rick and Morty poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//cvhNj9eoRBe5SxjCbQTkh05UP5K.jpg"
                               />
@@ -1280,6 +1305,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Come Home Love: Lo and Behold poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//lgD4j9gUGmMckZpWWRJjorWqGVT.jpg"
                               />
@@ -1310,6 +1336,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="The Walking Dead poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg"
                               />
@@ -1340,6 +1367,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Game of Thrones poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
                               />
@@ -1370,6 +1398,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="War of the Worlds poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//yThmbQkxSzW4HHdAaoj8RYHFH3i.jpg"
                               />
@@ -1400,6 +1429,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Cobra Kai poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//m7tG5E1EbywuwTsl6hq990So0Bx.jpg"
                               />
@@ -1430,6 +1460,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Lucifer poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//ekZobS8isE6mA53RAiGDG93hBxL.jpg"
                               />
@@ -1460,6 +1491,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Grey's Anatomy poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//daSFbrt8QCXV2hSwB0hqYjbj681.jpg"
                               />
@@ -1490,6 +1522,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="American Horror Story poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//kxtWasoZ7Q92erTJuuRtZiXTPiH.jpg"
                               />
@@ -1520,6 +1553,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Star Wars: Andor poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//59SVNwLfoMnZPPB6ukW6dlPxAdI.jpg"
                               />
@@ -1550,6 +1584,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="SPY x FAMILY poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//3r4LYFuXrg3G8fepysr4xSLWnQL.jpg"
                               />
@@ -1580,6 +1615,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="The Simpsons poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//zI3E2a3WYma5w8emI35mgq5Iurx.jpg"
                               />
@@ -1610,6 +1646,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Mar do Sertão poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//ixgnqO8xhFMb1zr8RRFsyeZ9CdD.jpg"
                               />
@@ -1640,6 +1677,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Stranger Things poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//49WJfeN0moxb9IPfGn8AIqMGskD.jpg"
                               />
@@ -1670,6 +1708,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Conversations with a Killer: The Jeffrey Dahmer Tapes poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//5BTn4GxWL48BP8OkfiatxZ6qpuE.jpg"
                               />
@@ -1740,6 +1779,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Hocus Pocus 2 poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//7ze7YNmUaX81ufctGqt0AgHxRtL.jpg"
                               />
@@ -1770,6 +1810,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Orphan: First Kill poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//pHkKbIRoCe7zIFvqan9LFSaQAde.jpg"
                               />
@@ -1800,6 +1841,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Bullet Train poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//tVxDe01Zy3kZqaZRNiXFGDICdZk.jpg"
                               />
@@ -1830,6 +1872,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Fall poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//spCAxD99U1A6jsiePFoqdEcY0dG.jpg"
                               />
@@ -1860,6 +1903,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="The Infernal Machine poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//bSqpOGzaKBdGkBLmcm1JJIVryYy.jpg"
                               />
@@ -1890,6 +1934,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Lou poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//djM2s4wSaATn4jVB33cV05PEbV7.jpg"
                               />
@@ -1920,6 +1965,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Athena poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//fenNPxVF5ERy0CSyVruuEg959Hg.jpg"
                               />
@@ -1950,6 +1996,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="After Ever Happy poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//6b7swg6DLqXCO3XUsMnv6RwDMW2.jpg"
                               />
@@ -1980,6 +2027,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Pinocchio poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//g8sclIV4gj1TZqUpnL82hKOTK3B.jpg"
                               />
@@ -2010,6 +2058,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Beast poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//xIGr7UHsKf0URWmyyd5qFMAq4d8.jpg"
                               />
@@ -2040,6 +2089,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Fullmetal Alchemist: The Final Alchemy poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//AeyiuQUUs78bPkz18FY3AzNFF8b.jpg"
                               />
@@ -2070,6 +2120,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Smile poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//hiaeZKzwsk4y4atFhmncO5KRxeT.jpg"
                               />
@@ -2100,6 +2151,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Thor: Love and Thunder poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg"
                               />
@@ -2130,6 +2182,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="DC League of Super-Pets poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//r7XifzvtezNt31ypvsmb6Oqxw49.jpg"
                               />
@@ -2160,6 +2213,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Prey poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//ujr5pztc1oitbe7ViMUOilFaJ7s.jpg"
                               />
@@ -2190,6 +2244,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Minions: The Rise of Gru poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//wKiOkZTN9lUUUNZLmtnwubZYONg.jpg"
                               />
@@ -2220,6 +2275,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Samaritan poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//vwq5iboxYoaSpOmEQrhq9tHicq7.jpg"
                               />
@@ -2250,6 +2306,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Dragon Ball Super: Super Hero poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//rugyJdeoJm7cSJL1q4jBpTNbxyU.jpg"
                               />
@@ -2280,6 +2337,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Jurassic World Dominion poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg"
                               />
@@ -2310,6 +2368,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Bullet Proof poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//cj6YmTAU7Jvn3w6d2NfjQzpX7Pw.jpg"
                               />
@@ -2380,6 +2439,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Bullet Train poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//tVxDe01Zy3kZqaZRNiXFGDICdZk.jpg"
                               />
@@ -2410,6 +2470,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="The Lord of the Rings: The Rings of Power poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//mYLOqiStMxDK3fYZFirgrMt8z5d.jpg"
                               />
@@ -2440,6 +2501,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Hocus Pocus 2 poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//7ze7YNmUaX81ufctGqt0AgHxRtL.jpg"
                               />
@@ -2470,6 +2532,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="House of the Dragon poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//z2yahl2uefxDCl0nogcRBstwruJ.jpg"
                               />
@@ -2500,6 +2563,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Thor: Love and Thunder poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg"
                               />
@@ -2530,6 +2594,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Star Wars: Andor poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//59SVNwLfoMnZPPB6ukW6dlPxAdI.jpg"
                               />
@@ -2560,6 +2625,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Werewolf by Night poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//mvIvNKRIJPPS7WSFarFhOAGIVnU.jpg"
                               />
@@ -2590,6 +2656,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Blonde poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//jOgbnL5FB30pprEjZaY1E1iPtPM.jpg"
                               />
@@ -2620,6 +2687,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="She-Hulk: Attorney at Law poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//3qO7wycn6o0lUJf15dupMFbEBTY.jpg"
                               />
@@ -2650,6 +2718,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="The Greatest Beer Run Ever poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//ggf37TpcKaxwguhvtNn6MQpyqBn.jpg"
                               />
@@ -2680,6 +2749,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Dahmer – Monster: The Jeffrey Dahmer Story poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//f2PVrphK0u81ES256lw3oAZuF3x.jpg"
                               />
@@ -2710,6 +2780,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Hellraiser poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//u4ikorO4E3PouLRRwGaRuhFvsl3.jpg"
                               />
@@ -2740,6 +2811,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Luckiest Girl Alive poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//e0vrbTmTf2ZcW5CIS9qJ8FDbsU9.jpg"
                               />
@@ -2770,6 +2842,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Top Gun: Maverick poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//62HCnUTziyWcpDaBO2i1DX17ljH.jpg"
                               />
@@ -2800,6 +2873,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Jeepers Creepers: Reborn poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//aGBuiirBIQ7o64FmJxO53eYDuro.jpg"
                               />
@@ -2830,6 +2904,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Vesper poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//rLrfEvJhQP3SubJR9SYwHWE9tlZ.jpg"
                               />
@@ -2860,6 +2935,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Mr. Harrigan's Phone poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//gPn9e8eP7TeKQU4IeWAMzOajR40.jpg"
                               />
@@ -2890,6 +2966,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="After Ever Happy poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//6b7swg6DLqXCO3XUsMnv6RwDMW2.jpg"
                               />
@@ -2920,6 +2997,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="The Midnight Club poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//2Y4F9BHkacKIMnDBZI3GGKpG1If.jpg"
                               />
@@ -2947,6 +3025,7 @@ exports[`Test Profile Dashboard Matches Snapshot 1`] = `
                                 </span>
                               </span>
                               <img
+                                alt="Black Panther: Wakanda Forever poster"
                                 data-testid="movie-card"
                                 src="https://image.tmdb.org/t/p/w500//bxCTPBtVduUotUqKMBgz6lJQUJi.jpg"
                               />
