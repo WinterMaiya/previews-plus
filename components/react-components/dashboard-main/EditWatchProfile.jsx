@@ -62,7 +62,7 @@ const EditWatchProfile = ({
 								<h2>Edit Watch Profile</h2>
 							</div>
 							<div className="mb-3">
-								<label for="name" className="form-label" data-testid="name">
+								<label htmlFor="name" className="form-label" data-testid="name">
 									{name ? `Hello ${name}!` : "Display Name"}
 								</label>
 								<input

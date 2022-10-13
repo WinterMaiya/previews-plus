@@ -23,7 +23,7 @@ const Dashboard = ({ watchProfiles }) => {
 			// then automatically let them create a new watch profile
 			openModal();
 		}
-	}, []);
+	}, [len]);
 
 	return (
 		<div>

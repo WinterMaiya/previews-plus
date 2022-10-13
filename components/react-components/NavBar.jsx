@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { signOut } from "next-auth/react";
+import Link from "next/link";
 
 const NavBar = ({
 	searching,
@@ -136,13 +137,13 @@ const NavBar = ({
 								aria-labelledby="navbarDropdown"
 							>
 								<li>
-									<a
+									<Link
 										className="dropdown-item"
 										href="/dashboard"
 										data-testid="navbar-switch-profile"
 									>
 										Switch Profile
-									</a>
+									</Link>
 								</li>
 								<li>
 									<a
