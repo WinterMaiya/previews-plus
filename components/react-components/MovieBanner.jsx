@@ -222,75 +222,21 @@ const MovieBanner = ({
 							</p>
 						</div>
 						<div className="row">
-							<div className="col-3 col-md-3 col-xl-4 col-xxl-5">
-								<div className="d-none d-lg-block mt-3">
-									<ul className="nav nav-tabs" id="myTab" role="tablist">
-										{videoData ? (
-											<div>
-												{videoData.map((e) => {
-													return (
-														<li
-															className={`nav-item `}
-															key={e.id}
-															role="presentation"
-														>
-															<button
-																className={`nav-link ${
-																	e.id === videoData[0].id ? "active" : ""
-																}`}
-																id={`${e.id}-tab`}
-																data-bs-toggle="tab"
-																data-bs-target={`#nav-${e.id}`}
-																type="button"
-																role="tab"
-																aria-controls={`nav-${e.id}`}
-																aria-selected={
-																	e.id === videoData[0].id ? "true" : "false"
-																}
-															>
-																{e.name}
-															</button>
-														</li>
-													);
-												})}
-											</div>
-										) : (
-											<div></div>
-										)}
-									</ul>
-									<div className="tab-content" id="myTabContent">
-										{videoData ? (
-											<div>
-												{videoData.map((e) => {
-													return (
-														<div
-															className={`tab-pane fade ${
-																e.id === videoData[0].id ? "show active" : ""
-															}`}
-															key={e.id}
-															id={`nav-${e.id}`}
-															role="tabpanel"
-															aria-labelledby={`${e.id}-tab`}
-														>
-															{videoData[0].key && (
-																<div className="ratio ratio-16x9">
-																	<iframe
-																		src={`https://www.youtube.com/embed/${e.key}`}
-																		title={""}
-																		allowFullScreen={true}
-																	></iframe>
-																</div>
-															)}
-														</div>
-													);
-												})}
-											</div>
-										) : (
-											<div></div>
-										)}
+							{videoData ? (
+								<div className="col-4 col-md-5 col-xl-6 col-xxl-7">
+									<div className="d-none d-lg-block mt-3">
+										<div className="ratio ratio-16x9">
+											<iframe
+												src={`https://www.youtube.com/embed/${videoData[0].key}`}
+												title={""}
+												allowFullScreen={true}
+											></iframe>
+										</div>
 									</div>
 								</div>
-							</div>
+							) : (
+								<div></div>
+							)}
 						</div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
