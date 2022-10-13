@@ -9,7 +9,7 @@ export default async function searchApi(req, res) {
 		return res.status(401).json({ message: "Unauthorized" });
 	}
 	try {
-		if (req.METHOD === "GET") {
+		if (req.method === "GET") {
 			const { data } = await axios.get(
 				`https://api.themoviedb.org/3/movie/${id}/images?api_key=${process.env.TMDB_API_KEY}`
 			);
