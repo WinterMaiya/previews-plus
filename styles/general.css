@@ -15,12 +15,6 @@ body {
 	background-color: #121212 !important;
 }
 
-@media (max-width: 767px) {
-	.swiper-slide {
-		height: 350px;
-	}
-}
-
 .parallax {
 	/* Set a specific height */
 	min-height: 500px;
