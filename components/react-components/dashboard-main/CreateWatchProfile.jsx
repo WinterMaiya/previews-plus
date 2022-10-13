@@ -82,7 +82,7 @@ const CreateWatchProfile = ({ closeModal, setLoading }) => {
 								<div className="row">
 									{globalProfileImage.map((e) => {
 										return (
-											<div className="col-md-2 col-4">
+											<div key={e} className="col-md-2 col-4">
 												<ProfileImages
 													imageInfo={e}
 													profileIcon={profileIcon}

@@ -228,12 +228,15 @@ const MovieBanner = ({
 											<div>
 												{videoData.map((e) => {
 													return (
-														<li className={`nav-item `} role="presentation">
+														<li
+															className={`nav-item `}
+															key={e.id}
+															role="presentation"
+														>
 															<button
 																className={`nav-link ${
 																	e.id === videoData[0].id ? "active" : ""
 																}`}
-																key={e.id}
 																id={`${e.id}-tab`}
 																data-bs-toggle="tab"
 																data-bs-target={`#nav-${e.id}`}
@@ -263,6 +266,7 @@ const MovieBanner = ({
 															className={`tab-pane fade ${
 																e.id === videoData[0].id ? "show active" : ""
 															}`}
+															key={e.id}
 															id={`nav-${e.id}`}
 															role="tabpanel"
 															aria-labelledby={`${e.id}-tab`}

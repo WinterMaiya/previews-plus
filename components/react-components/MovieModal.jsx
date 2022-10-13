@@ -167,13 +167,23 @@ const MovieModal = ({
 										if (movieModalData.movie.media_type === "movie") {
 											for (let i of MOVIE_DATA.movie.genres) {
 												if (i.id === e) {
-													return <span className="fst-italic"> {i.name} </span>;
+													return (
+														<span className="fst-italic" key={i.name}>
+															{" "}
+															{i.name}{" "}
+														</span>
+													);
 												}
 											}
 										} else {
 											for (let i of MOVIE_DATA.tv.genres) {
 												if (i.id === e) {
-													return <span className="fst-italic"> {i.name} </span>;
+													return (
+														<span className="fst-italic" key={i.name}>
+															{" "}
+															{i.name}{" "}
+														</span>
+													);
 												}
 											}
 										}
@@ -322,14 +332,17 @@ const MovieModal = ({
 									<ul className="nav nav-tabs" id="myTab" role="tablist">
 										{movieModalData.video.map((e) => {
 											return (
-												<li className={`nav-item `} role="presentation">
+												<li
+													className={`nav-item `}
+													key={e.id}
+													role="presentation"
+												>
 													<button
 														className={`nav-link ${
 															e.id === movieModalData.video[0].id
 																? "active"
 																: ""
 														}`}
-														key={e.id}
 														id={`${e.id}-tab`}
 														data-bs-toggle="tab"
 														data-bs-target={`#nav-${e.id}`}
@@ -352,6 +365,7 @@ const MovieModal = ({
 										{movieModalData.video.map((e) => {
 											return (
 												<div
+													key={e.id}
 													className={`tab-pane fade ${
 														e.id === movieModalData.video[0].id
 															? "show active"
