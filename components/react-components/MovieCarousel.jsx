@@ -38,19 +38,19 @@ const MovieCarousel = ({
 							<div className="border-top">
 								<Swiper
 									key={movieData}
-									slidesPerView={1}
+									slidesPerView={2}
 									navigation={movieData.length < 7 ? false : true}
 									modules={[Navigation]}
 									ref={swiper}
 									// loop={movieData.length < 7 ? false : true}
 									breakpoints={{
 										"@0.00": {
-											slidesPerView: 1,
+											slidesPerView: 2,
 											spaceBetween: 10,
-											slidesPerGroup: 1,
+											slidesPerGroup: 2,
 										},
 										"@0.75": {
-											slidesPerView: 3,
+											slidesPerView: 4,
 											spaceBetween: 20,
 											slidesPerGroup: 3,
 										},

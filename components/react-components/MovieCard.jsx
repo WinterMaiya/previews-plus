@@ -59,6 +59,7 @@ const MovieCard = ({ movie, openModal, grabMovieData, watchProfile }) => {
 						// data-bs-toggle="modal"
 						// data-bs-target="#MovieModal"
 						alt={`${movie.title ? movie.title : movie.name} poster`}
+						className={"img-fluid"}
 						onClick={() => {
 							openModal();
 							grabMovieData(movie);
