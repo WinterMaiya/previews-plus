@@ -22,8 +22,8 @@ const WelcomePage = () => {
 					<div className="row text-center ">
 						<div>
 							<p className="fs-5">
-								<strong className="fst-italic">Previews+</strong> lets you
-								stream your favorite movies and tv shows'{" "}
+								<strong className="fst-italic">Previews+</strong> lets you -==
+								stream your favorite movies and tv shows{`&apos;`}{" "}
 								<strong className="text-primary">trailers!</strong>
 							</p>
 							<p className="fs-6">
@@ -52,8 +52,8 @@ const WelcomePage = () => {
 							<p className="fs-5">
 								Add videos you want to see to your{" "}
 								<strong className="text-primary">Watchlist </strong>
-								or rate videos you've seen before. Our algorithm learns your
-								preferences in order to show you
+								or rate videos you{`&apos;`}ve seen before. Our algorithm learns
+								your preferences in order to show you
 								<strong className="text-primary"> new </strong>shows and movies
 								you will enjoy!
 							</p>

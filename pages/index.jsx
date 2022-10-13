@@ -7,7 +7,7 @@ const PreviewsPlus = () => {
 			<Head>
 				<title>Previews+</title>
 			</Head>
-			<div>You shouldn't be here...</div>
+			<div>You shouldn{`&apos;`}t be here...</div>
 		</div>
 	);
 };
