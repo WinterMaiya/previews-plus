@@ -46,7 +46,7 @@ const Dashboard = ({ watchProfiles }) => {
 						<div className="row">
 							<div className="col text-center">
 								<h1 className="display-1" data-testid="header">
-									Who{`&apos;`}s Watching?
+									{"Who's"} Watching?
 								</h1>
 							</div>
 						</div>

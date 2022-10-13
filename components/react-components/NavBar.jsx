@@ -137,12 +137,13 @@ const NavBar = ({
 								aria-labelledby="navbarDropdown"
 							>
 								<li>
-									<Link
-										className="dropdown-item"
-										href="/dashboard"
-										data-testid="navbar-switch-profile"
-									>
-										Switch Profile
+									<Link href="/dashboard">
+										<a
+											className="dropdown-item"
+											data-testid="navbar-switch-profile"
+										>
+											Switch Profile
+										</a>
 									</Link>
 								</li>
 								<li>

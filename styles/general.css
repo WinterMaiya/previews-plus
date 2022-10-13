@@ -12,7 +12,7 @@ font-family: 'Satisfy', cursive; */
 }
 
 body {
-	background-color: #121212;
+	background-color: #121212 !important;
 }
 .parallax {
 	/* Set a specific height */
