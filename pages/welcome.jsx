@@ -124,6 +124,7 @@ const WelcomePage = () => {
 										src="/images/tmdb_logo.svg"
 										width="100"
 										height="100"
+										alt="TMDB Logo"
 									></img>
 								</a>
 							</div>
