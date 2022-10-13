@@ -90,6 +90,7 @@ const MovieBanner = ({
 			<img
 				className="rounded card-img"
 				src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+				alt={"Movie Backdrop image"}
 			></img>
 			<div className="card-img-overlay bg-dark bg-opacity-50">
 				<div className="container">
@@ -148,7 +149,7 @@ const MovieBanner = ({
 											width="25"
 											height="25"
 											fill="currentColor"
-											class="bi bi-info-circle-fill"
+											className="bi bi-info-circle-fill"
 											viewBox="0 0 16 16"
 										>
 											<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
@@ -177,7 +178,7 @@ const MovieBanner = ({
 												width="25"
 												height="25"
 												fill="currentColor"
-												class="bi bi-dash-circle"
+												className="bi bi-dash-circle"
 												viewBox="0 0 16 16"
 											>
 												<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -206,7 +207,7 @@ const MovieBanner = ({
 												width="25"
 												height="25"
 												fill="currentColor"
-												class="bi bi-plus-circle"
+												className="bi bi-plus-circle"
 												viewBox="0 0 16 16"
 											>
 												<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -221,71 +222,21 @@ const MovieBanner = ({
 							</p>
 						</div>
 						<div className="row">
-							<div className="col-3 col-md-3 col-xl-4 col-xxl-5">
-								<div className="d-none d-lg-block mt-3">
-									<ul className="nav nav-tabs" id="myTab" role="tablist">
-										{videoData ? (
-											<div>
-												{videoData.map((e) => {
-													return (
-														<li className={`nav-item `} role="presentation">
-															<button
-																class={`nav-link ${
-																	e.id === videoData[0].id ? "active" : ""
-																}`}
-																key={e.id}
-																id={`${e.id}-tab`}
-																data-bs-toggle="tab"
-																data-bs-target={`#nav-${e.id}`}
-																type="button"
-																role="tab"
-																aria-controls={`nav-${e.id}`}
-																aria-selected={
-																	e.id === videoData[0].id ? "true" : "false"
-																}
-															>
-																{e.name}
-															</button>
-														</li>
-													);
-												})}
-											</div>
-										) : (
-											<div></div>
-										)}
-									</ul>
-									<div className="tab-content" id="myTabContent">
-										{videoData ? (
-											<div>
-												{videoData.map((e) => {
-													return (
-														<div
-															className={`tab-pane fade ${
-																e.id === videoData[0].id ? "show active" : ""
-															}`}
-															id={`nav-${e.id}`}
-															role="tabpanel"
-															aria-labelledby={`${e.id}-tab`}
-														>
-															{videoData[0].key && (
-																<div className="ratio ratio-16x9">
-																	<iframe
-																		src={`https://www.youtube.com/embed/${e.key}`}
-																		title={""}
-																		allowFullScreen={true}
-																	></iframe>
-																</div>
-															)}
-														</div>
-													);
-												})}
-											</div>
-										) : (
-											<div></div>
-										)}
+							{videoData ? (
+								<div className="col-4 col-md-5 col-xl-6 col-xxl-7">
+									<div className="d-none d-lg-block mt-3">
+										<div className="ratio ratio-16x9 border-top">
+											<iframe
+												src={`https://www.youtube.com/embed/${videoData[0].key}`}
+												title={""}
+												allowFullScreen={true}
+											></iframe>
+										</div>
 									</div>
 								</div>
-							</div>
+							) : (
+								<div></div>
+							)}
 						</div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -296,11 +247,11 @@ const MovieBanner = ({
 							viewBox="0 0 16 16"
 						>
 							<path
-								fill-rule="evenodd"
+								fillRule="evenodd"
 								d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
 							/>
 							<path
-								fill-rule="evenodd"
+								fillRule="evenodd"
 								d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
 							/>
 						</svg>

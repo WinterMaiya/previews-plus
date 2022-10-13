@@ -62,14 +62,14 @@ const EditWatchProfile = ({
 								<h2>Edit Watch Profile</h2>
 							</div>
 							<div className="mb-3">
-								<label for="name" class="form-label" data-testid="name">
+								<label htmlFor="name" className="form-label" data-testid="name">
 									{name ? `Hello ${name}!` : "Display Name"}
 								</label>
 								<input
 									data-testid="input"
 									type="text"
 									value={name}
-									class="form-control"
+									className="form-control"
 									id="name"
 									placeholder="Display Name"
 									onChange={(e) => {
@@ -91,7 +91,7 @@ const EditWatchProfile = ({
 								<div className="row">
 									{globalProfileImage.map((e) => {
 										return (
-											<div className="col-md-2 col-4">
+											<div key={e} className="col-md-2 col-4">
 												<ProfileImages
 													imageInfo={e}
 													profileIcon={profileIcon}

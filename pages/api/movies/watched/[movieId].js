@@ -47,23 +47,22 @@ export default async function handler(req, res) {
 					},
 				});
 				if (newWatched) {
-					return res
-						.status(201)
-						.json({
-							message: "Success",
-							success: true,
-							status: "Added Video to Watched",
-						});
+					return res.status(201).json({
+						message: "Success",
+						success: true,
+						status: "Added Video to Watched",
+					});
 				}
 			}
-			return res
-				.status(200)
-				.json({
-					message: "Success",
-					success: true,
-					status: "Video already exists",
-				});
+			return res.status(200).json({
+				message: "Success",
+				success: true,
+				status: "Video already exists",
+			});
 		}
+		return res
+			.status(405)
+			.json({ success: false, message: "Method not allowed" });
 	} catch (e) {
 		console.error(e);
 		return res.status(404).json({ message: e });

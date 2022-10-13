@@ -91,6 +91,9 @@ export default async function handler(req, res) {
 			}
 			return res.status(404).json({ message: "Not Found" });
 		}
+		return res
+			.status(405)
+			.json({ success: false, message: "Method not allowed" });
 	} catch (e) {
 		console.error(e);
 		return res.status(400).json({ message: e });

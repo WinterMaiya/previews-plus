@@ -36,6 +36,7 @@ const infoComponent = () => {
 											src="/images/tmdb_logo.svg"
 											width="100"
 											height="100"
+											alt="TMDB App Logo"
 										></img>
 									</a>
 								</div>

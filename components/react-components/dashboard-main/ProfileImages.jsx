@@ -8,7 +8,7 @@ const ProfileImages = ({ imageInfo, profileIcon, setProfileIcon }) => {
 	useEffect(() => {
 		// Reloads the module if it has detected a change to the parent state
 		imageInfo === profileIcon ? setIsSelected(true) : setIsSelected(false);
-	}, [profileIcon]);
+	}, [profileIcon, imageInfo]);
 
 	const selectImage = () => {
 		// Sets the profile icon hook of the parent

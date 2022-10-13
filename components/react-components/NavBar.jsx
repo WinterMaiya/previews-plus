@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { signOut } from "next-auth/react";
+import Link from "next/link";
 
 const NavBar = ({
 	searching,
@@ -94,14 +95,14 @@ const NavBar = ({
 					</ul>
 
 					<form
-						class="d-flex"
+						className="d-flex"
 						role="search"
 						onSubmit={(e) => {
 							e.preventDefault();
 						}}
 					>
 						<input
-							class="form-control me-2"
+							className="form-control me-2"
 							type="search"
 							placeholder="Search"
 							aria-label="Search"
@@ -113,9 +114,9 @@ const NavBar = ({
 						/>
 					</form>
 					<ul className="navbar-nav">
-						<li class="nav-item dropdown">
+						<li className="nav-item dropdown">
 							<a
-								class="nav-link dropdown-toggle align-middle"
+								className="nav-link dropdown-toggle align-middle"
 								href="#"
 								id="navbarDropdown"
 								role="button"
@@ -132,21 +133,21 @@ const NavBar = ({
 								/>
 							</a>
 							<ul
-								class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+								className="dropdown-menu dropdown-menu-dark dropdown-menu-end"
 								aria-labelledby="navbarDropdown"
 							>
 								<li>
-									<a
-										class="dropdown-item"
+									<Link
+										className="dropdown-item"
 										href="/dashboard"
 										data-testid="navbar-switch-profile"
 									>
 										Switch Profile
-									</a>
+									</Link>
 								</li>
 								<li>
 									<a
-										class="dropdown-item"
+										className="dropdown-item"
 										href="#"
 										onClick={() => {
 											clearSearchBar();
@@ -160,7 +161,7 @@ const NavBar = ({
 								<li>
 									<a
 										data-testid="navbar-logout"
-										class="dropdown-item bg-danger"
+										className="dropdown-item bg-danger"
 										href="#"
 										onClick={signOut}
 									>

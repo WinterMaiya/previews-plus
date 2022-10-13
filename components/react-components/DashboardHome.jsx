@@ -197,6 +197,7 @@ const DashboardHome = ({
 							e.data.media_type = "movie";
 							return (
 								<div
+									key={`${e.title} Movies`}
 									className={`row ${
 										dashboardState === "Tv" ? "d-none" : "d-block"
 									}`}
@@ -222,6 +223,7 @@ const DashboardHome = ({
 							e.data.media_type = "tv";
 							return (
 								<div
+									key={`${e.title} Shows`}
 									className={`row ${
 										dashboardState === "Movie" ? "d-none" : "d-block"
 									}`}
@@ -230,7 +232,6 @@ const DashboardHome = ({
 										<MovieCarousel
 											movies={e.data}
 											title={`${e.title} Shows`}
-											key={`${e.title} Shows`}
 											grabMovieData={grabMovieData}
 											openModal={openModal}
 											watchProfile={watchProfile}
