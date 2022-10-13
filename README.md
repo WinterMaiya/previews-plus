@@ -7,7 +7,7 @@ Previews+ is a website that lets you stream your favorite movies and shows' prev
 
 ## Deployed Website
 
-The website is currently not deployed yet. Stay tuned!
+The website is deployed using vercel. You can check it out at the address here: [https://previews-plus.vercel.app/](https://previews-plus.vercel.app/)
 
 ## Getting Started:
 ### Signin with Next-Auth
