@@ -261,6 +261,7 @@ const MovieModal = ({
 											likedData === 1 ? "btn-danger" : "btn-outline-secondary"
 										} rounded ms-3 mx-1`}
 										onClick={() => {
+											likedData = 1;
 											likeMovie(1);
 										}}
 									>
@@ -282,6 +283,7 @@ const MovieModal = ({
 											likedData === 2 ? "btn-success" : "btn-outline-secondary"
 										} rounded mx-1`}
 										onClick={() => {
+											likedData = 2;
 											likeMovie(2);
 										}}
 									>
@@ -302,6 +304,7 @@ const MovieModal = ({
 											likedData === 3 ? "btn-success" : "btn-outline-secondary"
 										} rounded mx-1`}
 										onClick={() => {
+											likedData = 3;
 											likeMovie(3);
 										}}
 									>
